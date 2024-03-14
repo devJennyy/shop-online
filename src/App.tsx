@@ -414,19 +414,19 @@ function App() {
           {/* Mini Highlights */}
           <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-28 cursor-pointer">
             <div className="flex flex-row justify-between items-center w-full h-full lg:px-16 md:px-10 sm:px-7 text-[14px]">
-              <div className="flex flex-col justify-center items-center gap-4">
+              <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
                 <BiLogoTelegram size={26} />
                 <p className="lg:text-[16px] sm:text-[14px]">Free Shipping</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-4">
+              <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
                 <MdOutlineCurrencyExchange size={26} />
                 <p className="lg:text-[16px] sm:text-[14px]">Guaranteed Refund</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-4">
+              <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
                 <BiSolidTruck size={26} />
                 <p className="lg:text-[16px] sm:text-[14px]">Fast Delivery</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-4">
+              <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
                 <MdPayment size={26} />
                 <p className="lg:text-[16px] sm:text-[14px]">Flexible Payments</p>
               </div>
