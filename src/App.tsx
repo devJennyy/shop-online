@@ -333,7 +333,7 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="flex flex-row justify-between w-full xl:hidden lg:hidden md:gap-0 gap-2">
+                <div className="md:flex flex-row justify-between w-full xl:hidden lg:hidden">
                   <Discovery />
                   <Discovery />
                   <Discovery />
