@@ -326,7 +326,7 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="lg:flex flex-row justify-between w-full xl:hidden sm:hidden">
+                <div className="lg:flex flex-row justify-between w-full xl:hidden md:hidden sm:hidden">
                   <Discovery />
                   <Discovery />
                   <Discovery />
@@ -340,7 +340,7 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:hidden">
+                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:hidden gap-2">
                   <Discovery />
                   <Discovery />
                   <Discovery />
@@ -357,14 +357,21 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="lg:flex flex-row justify-between w-full xl:hidden sm:hidden">
+                <div className="lg:flex flex-row justify-between w-full xl:hidden md:hidden sm:hidden">
                   <Discovery />
                   <Discovery />
                   <Discovery />
                   <Discovery />
                 </div>
 
-                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:gap-0 gap-2">
+                <div className="md:flex flex-row justify-between w-full xl:hidden lg:hidden sm:hidden gap-2">
+                  <Discovery />
+                  <Discovery />
+                  <Discovery />
+                  <Discovery />
+                </div>
+
+                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:hidden gap-2">
                   <Discovery />
                   <Discovery />
                   <Discovery />
@@ -381,14 +388,21 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="lg:flex flex-row justify-between w-full xl:hidden sm:hidden">
+                <div className="lg:flex flex-row justify-between w-full xl:hidden md:hidden sm:hidden">
                   <Discovery />
                   <Discovery />
                   <Discovery />
                   <Discovery />
                 </div>
 
-                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:gap-0 gap-2">
+                <div className="md:flex flex-row justify-between w-full xl:hidden lg:hidden sm:hidden gap-2">
+                  <Discovery />
+                  <Discovery />
+                  <Discovery />
+                  <Discovery />
+                </div>
+
+                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:hidden gap-2">
                   <Discovery />
                   <Discovery />
                   <Discovery />
