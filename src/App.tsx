@@ -104,8 +104,8 @@ function App() {
           {/* Homepage */}
           <div className="flex flex-row justify-center items-center mt-20 gap-2 h-80">
             <div className="sm:flex flex-col gap-2 h-full hidden">
-              <div className="w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
-              <div className="w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
+              <div className="lg:w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
+              <div className="lg:w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
             </div>
 
             <div className="w-full h-full bg-[#E0E0E0] rounded-md"></div>
