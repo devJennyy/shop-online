@@ -326,14 +326,15 @@ function App() {
                   <Discovery />
                 </div>
 
-                <div className="flex flex-row justify-between w-full xl:hidden sm:hidden">
+                <div className="lg:flex flex-row justify-between w-full xl:hidden sm:hidden">
                   <Discovery />
                   <Discovery />
                   <Discovery />
                   <Discovery />
                 </div>
 
-                <div className="sm:flex flex-row justify-between w-full xl:hidden lg:hidden md:gap-0 gap-2">
+                <div className="flex flex-row justify-between w-full xl:hidden lg:hidden md:gap-0 gap-2">
+                  <Discovery />
                   <Discovery />
                   <Discovery />
                   <Discovery />
