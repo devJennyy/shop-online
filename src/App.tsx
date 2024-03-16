@@ -29,37 +29,36 @@ import { GoShieldCheck } from "react-icons/go";
 function App() {
   return (
     <>
-      {/* Main Container */}
-      <div className="flex flex-col justify-center items-center w-[1240px] h-fit text-[#0B0D21] shrink-0">
-        {/* Mini-Navbar */}
-        <div className="w-full text-white bg-[#030812]">
-          <div className="flex flex-row justify-start items-center h-12 bg-[#030812] px-8">
-            <div className="flex flex-row items-center gap-2 w-full">
-              <BsBagCheckFill size={16} />
-              <p className="text-[14px] font-light cursor-pointer">
-                Free shipping on all orders over $50
-              </p>
-            </div>
+      {/* Mini-Navbar */}
+      <div className="w-full text-white bg-[#030812]">
+        <div className="flex flex-row justify-start items-center h-12 w-[1240px] mx-auto bg-[#030812] px-8">
+          <div className="flex flex-row items-center gap-2 w-full">
+            <BsBagCheckFill size={16} />
+            <p className="text-[14px] font-light cursor-pointer">
+              Free shipping on all orders over $50
+            </p>
+          </div>
 
-            <div className="flex flex-row justify-end items-center gap-6 text-[14px] font-light w-full">
-              <button className="flex flex-row justify-center items-center gap-2">
-                <IoMdGlobe size={16} />
-                <p>English</p>
-                <MdKeyboardArrowDown size={16} />
-              </button>
-              <button className="flex flex-row justify-center items-center gap-2">
-                <LuMessagesSquare size={16} />
-                <p>Faqs</p>
-              </button>
-              <button className="flex flex-row justify-center items-center gap-2">
-                <BiSolidHelpCircle size={16} />
-                <p>Help Center</p>
-              </button>
-            </div>
+          <div className="flex flex-row justify-end items-center gap-6 text-[14px] font-light w-full">
+            <button className="flex flex-row justify-center items-center gap-2">
+              <IoMdGlobe size={16} />
+              <p>English</p>
+              <MdKeyboardArrowDown size={16} />
+            </button>
+            <button className="flex flex-row justify-center items-center gap-2">
+              <LuMessagesSquare size={16} />
+              <p>Faqs</p>
+            </button>
+            <button className="flex flex-row justify-center items-center gap-2">
+              <BiSolidHelpCircle size={16} />
+              <p>Help Center</p>
+            </button>
           </div>
         </div>
+      </div>
 
-        {/* Body*/}
+      {/* Main Container */}
+      <div className="w-[1240px] mx-auto h-fit text-[#0B0D21]">
         <div className="w-full h-full px-8">
           {/* Navbar */}
           <div className="flex flex-row justify-between items-center h-24 border-b border-[#E3E3E3]">
@@ -338,9 +337,7 @@ function App() {
               </div>
 
               <div className="flex flex-col justify-start items-start gap-8">
-                <p className="text-[18px] font-semibold">
-                  Company
-                </p>
+                <p className="text-[18px] font-semibold">Company</p>
                 <div className="flex flex-col justify-start items-start text-[#666666] text-[14px] font-normal gap-2">
                   <button className="hover:text-[#030812]">About</button>
                   <button className="hover:text-[#030812]">Contact</button>
@@ -352,9 +349,7 @@ function App() {
               </div>
 
               <div className="flex flex-col justify-start items-start gap-8">
-                <p className="text-[18px] font-semibold">
-                  Help Center
-                </p>
+                <p className="text-[18px] font-semibold">Help Center</p>
                 <div className="flex flex-col justify-start items-start text-[#666666] text-[14px] font-normal gap-2">
                   <button className="hover:text-[#030812]">
                     Customer Service
@@ -368,9 +363,7 @@ function App() {
               </div>
 
               <div className="flex flex-col justify-start items-start gap-8">
-                <p className="text-[18px] font-semibold">
-                  Partner
-                </p>
+                <p className="text-[18px] font-semibold">Partner</p>
                 <div className="flex flex-col justify-start items-start text-[#666666] text-[14px] font-normal gap-2">
                   <button className="hover:text-[#030812]">
                     Become Seller
@@ -382,9 +375,7 @@ function App() {
               </div>
 
               <div className="flex flex-col justify-start items-start gap-8">
-                <p className="text-[18px] font-semibold">
-                  Get app
-                </p>
+                <p className="text-[18px] font-semibold">Get app</p>
                 <div className="flex flex-col gap-2">
                   <button className="flex justify-center items-center w-40 h-12 rounded-md bg-[#1C1C1C] text-white active:scale-95 transition-all">
                     <div className="flex flex-row justify-center items-center gap-3">
