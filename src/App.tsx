@@ -1,6 +1,15 @@
-import { BiLogoTelegram, BiSolidHelpCircle, BiSolidTruck } from "react-icons/bi";
+import {
+  BiLogoTelegram,
+  BiSolidHelpCircle,
+  BiSolidTruck,
+} from "react-icons/bi";
 import { IoMdGlobe } from "react-icons/io";
-import { MdKeyboardArrowDown, MdOutlineCurrencyExchange, MdOutlineSupportAgent, MdPayment } from "react-icons/md";
+import {
+  MdKeyboardArrowDown,
+  MdOutlineCurrencyExchange,
+  MdOutlineSupportAgent,
+  MdPayment,
+} from "react-icons/md";
 import "./App.css";
 import { LuMessagesSquare, LuSearch } from "react-icons/lu";
 import { BsBagCheckFill } from "react-icons/bs";
@@ -15,9 +24,8 @@ import {
   FaApple,
   FaGooglePlay,
 } from "react-icons/fa";
-import { CiDeliveryTruck, CiDiscount1 } from "react-icons/ci";
+import { CiDiscount1, CiDeliveryTruck } from "react-icons/ci";
 import { GoShieldCheck } from "react-icons/go";
-
 function App() {
   return (
     <>
@@ -104,44 +112,133 @@ function App() {
           </div>
 
           {/* Highlights */}
-          <div className="flex justify-between items-center w-full h-32 border border-[#E1E3E5] rounded-md mt-16 px-7">
-            <div className="flex flex-row justify-center items-center gap-3">
-              <CiDiscount1 size={60} />
-              <div className="flex flex-col justify-center items-start gap-[1px]">
-                <p className="text-[16px] font-medium">Discount</p>
-                <p className="text-[12px] font-normal text-[#9A9CAA]">
-                  Enjoy vouchers everyday
-                </p>
+          <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-16 px-7">
+            {/* 3XL - 2XL - XL Screensizes */}
+            <div className="xl:flex flex-row justify-between items-center lg:hidden md:hidden sm:hidden w-full h-full">
+              <div className="flex flex-row justify-center items-center gap-3">
+                <CiDiscount1 size={60} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[16px] font-medium">Discount</p>
+                  <p className="text-[12px] font-normal text-[#9A9CAA]">
+                    Enjoy vouchers everyday
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <CiDeliveryTruck size={60} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[16px] font-medium">Free Delivery</p>
+                  <p className="text-[12px] font-normal text-[#9A9CAA]">
+                    100% Free for all orders
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <MdOutlineSupportAgent size={55} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[16px] font-medium">Great Support 24/7</p>
+                  <p className="text-[12px] font-normal text-[#9A9CAA]">
+                    We care your experiences
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <GoShieldCheck size={45} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[16px] font-medium">Secure Payment</p>
+                  <p className="text-[12px] font-normal text-[#9A9CAA]">
+                    100% Secure Payment Method
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* LG Screensizes */}
+            <div className="lg:flex flex-row justify-between items-center xl:hidden md:hidden sm:hidden w-full h-full">
+              <div className="flex flex-row justify-center items-center gap-3">
+                <CiDiscount1 size={55} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[14px] font-medium">Discount</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    Enjoy vouchers everyday
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <CiDeliveryTruck size={55} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[14px] font-medium">Free Delivery</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    100% Free for all orders
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <MdOutlineSupportAgent size={47} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[14px] font-medium">Great Support 24/7</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    We care your experiences
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-3">
+                <GoShieldCheck size={35} />
+                <div className="flex flex-col justify-center items-start gap-[1px]">
+                  <p className="text-[14px] font-medium">Secure Payment</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    100% Secure Payment Method
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-3">
-              <CiDeliveryTruck size={60} />
-              <div className="flex flex-col justify-center items-start gap-[1px]">
-                <p className="text-[16px] font-medium">Free Delivery</p>
-                <p className="text-[12px] font-normal text-[#9A9CAA]">
-                  100% Free for all orders
-                </p>
+            {/* MD - SM Screensizes */}
+            <div className="sm:flex flex-row justify-between items-center xl:hidden lg:hidden w-full h-full">
+              <div className="flex flex-col justify-center items-center gap-3">
+                <CiDiscount1 size={35} />
+                <div className="flex flex-col justify-center items-center gap-[1px]">
+                  <p className="text-[14px] font-medium">Discount</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    Free Vouchers
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-row justify-center items-center gap-3">
-              <MdOutlineSupportAgent size={55} />
-              <div className="flex flex-col justify-center items-start gap-[1px]">
-                <p className="text-[16px] font-medium">Great Support 24/7</p>
-                <p className="text-[12px] font-normal text-[#9A9CAA]">
-                  We care your experiences
-                </p>
+              <div className="flex flex-col justify-center items-center gap-3">
+                <CiDeliveryTruck size={35} />
+                <div className="flex flex-col justify-center items-center gap-[1px]">
+                  <p className="text-[14px] font-medium">Free Delivery</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    Free for all orders
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-row justify-center items-center gap-3">
-              <GoShieldCheck size={45} />
-              <div className="flex flex-col justify-center items-start gap-[1px]">
-                <p className="text-[16px] font-medium">Secure Payment</p>
-                <p className="text-[12px] font-normal text-[#9A9CAA]">
-                  100% Secure Payment Method
-                </p>
+              <div className="flex flex-col justify-center items-center gap-3">
+                <MdOutlineSupportAgent size={35} />
+                <div className="flex flex-col justify-center items-center gap-[1px]">
+                  <p className="text-[14px] font-medium">Support 24/7</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    We care for you
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-center gap-3">
+                <GoShieldCheck size={30} />
+                <div className="flex flex-col justify-center items-center gap-[1px]">
+                  <p className="text-[14px] font-medium">Secure Payment</p>
+                  <p className="text-[10px] font-normal text-[#9A9CAA]">
+                    100% Secure Payment
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -295,22 +392,22 @@ function App() {
 
           {/* Mini Highlights */}
           <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-28 cursor-pointer">
-            <div className="flex flex-row justify-between items-center w-full h-full px-16 text-[14px]">
-              <div className="flex flex-col justify-center items-center gap-3">
-                <BiLogoTelegram size={26}/>
-                <p>Free Shipping over $99</p>
+            <div className="flex flex-row justify-between items-center w-full h-full lg:px-16 md:px-10 sm:px-7 text-[14px]">
+              <div className="flex flex-col justify-center items-center gap-4">
+                <BiLogoTelegram size={26} />
+                <p className="lg:text-[16px] sm:text-[14px]">Free Shipping</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-3">
-                <MdOutlineCurrencyExchange size={26}/>
-                <p>30 Days money back</p>
+              <div className="flex flex-col justify-center items-center gap-4">
+                <MdOutlineCurrencyExchange size={26} />
+                <p className="lg:text-[16px] sm:text-[14px]">Guaranteed Refund</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-3">
-                <BiSolidTruck size={26}/>
-                <p>Fast Delivery</p>
+              <div className="flex flex-col justify-center items-center gap-4">
+                <BiSolidTruck size={26} />
+                <p className="lg:text-[16px] sm:text-[14px]">Fast Delivery</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-3">
-                <MdPayment size={26}/>
-                <p>Flexible payment options</p>
+              <div className="flex flex-col justify-center items-center gap-4">
+                <MdPayment size={26} />
+                <p className="lg:text-[16px] sm:text-[14px]">Flexible Payments</p>
               </div>
             </div>
           </div>
