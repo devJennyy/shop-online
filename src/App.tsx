@@ -1,6 +1,6 @@
 import { BiSolidHelpCircle } from "react-icons/bi";
 import { IoMdGlobe } from "react-icons/io";
-import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
+import { MdKeyboardArrowDown} from "react-icons/md";
 import "./App.css";
 import { LuMessagesSquare, LuSearch } from "react-icons/lu";
 import { BsBagCheckFill } from "react-icons/bs";
@@ -21,7 +21,7 @@ function App() {
               </p>
             </div>
 
-            <div className="flex flex-row justify-end items-center sm:gap-6 mb:gap-3 text-[14px] font-extralight ">
+            <div className="flex flex-row justify-end items-center sm:gap-6 mb:gap-3 text-[14px] font-extralight sm:w-full">
               <div className="flex flex-row justify-center items-center gap-2">
                 <IoMdGlobe size={16} className="sm:flex hidden"/>
                 <IoMdGlobe size={12} className="sm:hidden"/>
@@ -43,29 +43,25 @@ function App() {
         </div>
 
         {/* Body*/}
-        {/* <div className="w-full h-full px-64"> */}
+        <div className="w-full h-full max-w-[1240px] mx-auto px-8">
         {/* Navbar */}
-        {/* <div className="flex flex-row justify-between items-center w-full h-24 border-b border-[#E3E3E3]">
-          <div className="flex flex-row justify-center items-center gap-5">
-            <img src="/icons/logo.svg" className="w-full h-4" />
-            <p className="text-[20px] font-light">ShopOnline</p>
-            <img src="/icons/logo.svg" className="w-full h-4" />
-          </div>
+        <div className="flex flex-row sm:justify-between mb:justify-center items-center h-24 border-b border-[#E3E3E3]">
+            <img src="/icons/logo.svg"/>
 
-            <div className="flex flex-row justify-end items-center w-[450px] h-11 relative">
+            <div className="lg:flex flex-row justify-end items-center w-[400px] h-11 relative hidden">
               <input
                 placeholder="Sign up and get 100% off your first order"
                 className="w-full h-full text-[#9A9CAA] text-[14px] font-normal border border-[#E1E3E5] rounded-md pl-4 pr-12 outline-none"
               />
-              <LuSearch size={20} className="absolute mr-4 text-[##030812]" />
+              <LuSearch size={20} className="absolute mr-4 text-[#030812]" />
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-2">
-              <div className="flex flex-row justify-center items-center w-32 h-11 border border-[#E1E3E5] rounded-md gap-3">
+            <div className="sm:flex flex-row justify-center items-center gap-2 hidden">
+              <div className="flex flex-row justify-center items-center xl:w-32 w-11 h-11 border border-[#E1E3E5] rounded-md gap-3">
                 <img src="/icons/cart.svg" />
-                <p className="text-[14px]">Cart</p>
-                <div className="flex justify-center items-center bg-[#030812] w-5 h-5 rounded-full">
-                  <p className="text-white text-[10px]">2</p>
+                <p className="text-[14px] xl:flex hidden">Cart</p>
+                <div className="xl:flex justify-center items-center bg-[#030812] w-5 h-5 rounded-full hidden">
+                  <p className="text-white text-[10px] ">2</p>
                 </div>
               </div>
 
@@ -77,19 +73,19 @@ function App() {
                 <img src="/icons/user.svg" />
               </div>
             </div>
-          </div> */}
+          </div>
 
-        {/* Hompage */}
-        {/* <div className="flex flex-row justify-center items-center mt-20 gap-2 h-80">
-            <div className="flex flex-col gap-2 h-full">
+        {/* Homepage */}
+        <div className="flex flex-row justify-center items-center mt-20 gap-2 h-80">
+            <div className="sm:flex flex-col gap-2 h-full hidden">
               <div className="w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
               <div className="w-[440px] h-1/2 bg-[#E3E3E3] rounded-md"></div>
             </div>
 
             <div className="w-full h-full bg-[#E3E3E3] rounded-md"></div>
 
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
       </div>
     </>
   );
