@@ -12,16 +12,16 @@ function App() {
       <div className="w-full h-full text-[#0B0D21]">
         {/* Mini-Navbar */}
         <div className="w-full text-white bg-[#030812]">
-          <div className="flex flex-row justify-start items-center max-w-[1240px] mx-auto sm:h-12 mb:h-7 bg-[#030812] sm:px-8 mb:px-4">
+          <div className="flex flex-row justify-start items-center max-w-[1240px] mx-auto sm:h-12 h-7 bg-[#030812] sm:px-8 px-4">
             <div className="flex flex-row items-center gap-2 w-full">
               <BsBagCheckFill size={16} className="sm:flex hidden"/>
               <BsBagCheckFill size={16} className="sm:hidden"/>
-              <p className="sm:text-[14px] mb:text-[10px] font-extralight">
+              <p className="sm:text-[14px] text-[10px] font-extralight">
                 Free shipping on all orders over $50
               </p>
             </div>
 
-            <div className="flex flex-row justify-end items-center sm:gap-6 mb:gap-3 text-[14px] font-extralight sm:w-full">
+            <div className="flex flex-row justify-end items-center sm:gap-6 gap-3 text-[14px] font-extralight sm:w-full">
               <div className="flex flex-row justify-center items-center gap-2">
                 <IoMdGlobe size={16} className="sm:flex hidden"/>
                 <IoMdGlobe size={12} className="sm:hidden"/>
@@ -45,7 +45,7 @@ function App() {
         {/* Body*/}
         <div className="w-full h-full max-w-[1240px] mx-auto px-8">
         {/* Navbar */}
-        <div className="flex flex-row sm:justify-between mb:justify-center items-center h-24 border-b border-[#E3E3E3]">
+        <div className="flex flex-row sm:justify-between justify-center items-center h-24 border-b border-[#E3E3E3]">
             <img src="/icons/logo.svg"/>
 
             <div className="lg:flex flex-row justify-end items-center w-[400px] h-11 relative hidden">
