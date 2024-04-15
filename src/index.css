@@ -20,3 +20,10 @@ margin: 0;
   height: 100%;
   width: 100%;
 }
+
+@media (min-width: 1920px) {
+  .max {
+      padding-left: 8rem/* 240px */;
+      padding-right: 8rem/* 240px */;
+  }
+}
