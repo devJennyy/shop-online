@@ -114,7 +114,7 @@ function App() {
           {/* Highlights */}
           <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-16 px-7">
             {/* 3XL - 2XL - XL Screensizes */}
-            <div className="xl:flex flex-row justify-between items-center lg:hidden md:hidden sm:hidden w-full h-full">
+            <div className="flex flex-row justify-between items-center lg:hidden md:hidden sm:hidden w-full h-full">
               <div className="flex flex-row justify-center items-center gap-3">
                 <CiDiscount1 size={60} />
                 <div className="flex flex-col justify-center items-start gap-[1px]">
