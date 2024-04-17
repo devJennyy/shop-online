@@ -1,13 +1,5 @@
 # ShopOnline
-An e-commerce platform crafted for seamless online shopping https://shop-online-devjenny.vercel.app/
-
-## Available Screen Sizes
-- Responsive for all desktop screens
-- Mobile devices 
-  
-## Tech Used
-- React
-- TailwindCSS
+A responsive e-commerce website for online shopping https://shop-online-devjenny.vercel.app/
 
 <br>
 
