@@ -11,7 +11,8 @@ An e-commerce platform crafted for seamless online shopping https://shop-online-
 
 <br>
 
-!image here
+![image](https://github.com/devJennyy/shop-online/assets/135243946/2a5621d3-0ea2-418d-8076-92a3744b4dbd)
+
 
 ***
 
