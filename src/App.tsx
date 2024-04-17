@@ -62,7 +62,7 @@ function App() {
         {/* Body*/}
         <div className="w-full h-full px-8">
           {/* Navbar */}
-          <div className="flex flex-row justify-center items-center h-24 border-b border-[#E3E3E3]">
+          <div className="flex flex-row justify-between items-center h-24 border-b border-[#E3E3E3]">
             <button className="active:scale-95 transition-all w-60 h-full">
               <img src="/icons/logo.svg" className="w-full" />
             </button>
