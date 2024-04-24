@@ -116,6 +116,7 @@ function App() {
               <button className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md active:scale-95 transition-all">
                 <img src="/icons/heart.svg" />
               </button>
+              
 
               <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md active:scale-95 transition-all">
                 <img src="/icons/user.svg" />
