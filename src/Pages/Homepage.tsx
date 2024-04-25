@@ -7,6 +7,7 @@ import {
 import Categories from "../components/cards/Categories";
 import Discovery from "../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
+import LimitedDeals from "@/components/cards/LimitedDeals";
 
 const Homepage = () => {
   return (
@@ -97,41 +98,41 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* Mini Flash Deals */}
+      {/* Limited Flash Deals */}
       <div className="flex flex-col mt-28 gap-14">
-        <div className="flex flex-col w-full gap-3 flex-1">
-          <p className="text-[#666666] text-left">
-            Limited
-            <span className="text-[#030812] ml-2">Flash Deals</span>
-          </p>
+      <div className="flex flex-col w-full gap-3 flex-1">
+        <p className="text-[#666666] text-left">
+          Limited
+          <span className="text-[#030812] ml-2">Flash Deals</span>
+        </p>
 
-          <div className="flex flex-1 flex-row justify-start items-center">
-            <div className="w-full h-[1px] border bg-[#EDEDED] rounded-full relative"></div>
-            <div className="w-20 h-[6px] border bg-[#030812] rounded-full text-left absolute"></div>
-          </div>
-        </div>
-
-        <div className="flex flex-row justify-between items-center w-full h-56 gap-4">
-          <div className="w-full h-full bg-[#EDEDED] rounded-md">
-            <img
-              src="/images/flashdeals.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
-          <div className="w-full h-full bg-[#EDEDED] rounded-md">
-            <img
-              src="/images/flashdeals-two.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
-          <div className="w-full h-full bg-[#EDEDED] rounded-md">
-            <img
-              src="/images/flashdeals-three.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
+        <div className="flex flex-1 flex-row justify-start items-center">
+          <div className="w-full h-[1px] border bg-[#EDEDED] rounded-full relative"></div>
+          <div className="w-20 h-[6px] border bg-[#030812] rounded-full text-left absolute"></div>
         </div>
       </div>
+
+      <div className="flex flex-row justify-between items-center w-full h-56 gap-4">
+        <div className="w-full h-full bg-[#EDEDED] rounded-md">
+          <img
+            src="/images/flashdeals.png"
+            className="object-cover w-full h-full rounded-md"
+          />
+        </div>
+        <div className="w-full h-full bg-[#EDEDED] rounded-md">
+          <img
+            src="/images/flashdeals-two.png"
+            className="object-cover w-full h-full rounded-md"
+          />
+        </div>
+        <div className="w-full h-full bg-[#EDEDED] rounded-md">
+          <img
+            src="/images/flashdeals-three.png"
+            className="object-cover w-full h-full rounded-md"
+          />
+        </div>
+      </div>
+    </div>
 
       {/* Discovery */}
       <div className="flex flex-col mt-28 gap-14">
