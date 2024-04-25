@@ -74,24 +74,25 @@ const Homepage = () => {
         </div>
 
         <div className="flex flex-col gap-16">
+        
           <div className="flex flex-row justify-between w-full no-scrollbar">
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
+            <Categories categoryImage="/images/womens-apparel.png" categoryName="Women's Apparels"/>
+            <Categories categoryImage="/images/womens-shoes.png" categoryName="Women's Shoes"/>
+            <Categories categoryImage="/images/cosmetics.png" categoryName="Cosmetics"/>
+            <Categories categoryImage="/images/home-decor.png" categoryName="Home Decor"/>
+            <Categories categoryImage="/images/appliances.png" categoryName="Appliances"/>
+            <Categories categoryImage="/images/womens-accessories.png" categoryName="Women's Accessories"/>
+            <Categories categoryImage="/images/bags.png" categoryName="Bags"/>
           </div>
 
           <div className="flex flex-row justify-between w-full no-scrollbar">
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
-            <Categories />
+            <Categories categoryImage="/images/mens-apparel.png" categoryName="Men's Apparel"/>
+            <Categories categoryImage="/images/men-shoes.png" categoryName="Men's Shoes"/>
+            <Categories categoryImage="/images/gadgets.png" categoryName="Gadgets"/>
+            <Categories categoryImage="/images/motors.png" categoryName="Motors"/>
+            <Categories categoryImage="/images/home&living.png" categoryName="Home & Living"/>
+            <Categories categoryImage="/images/mens-accessories.png" categoryName="Men's Accessories"/>
+            <Categories categoryImage="/images/mobiles-accessories.png" categoryName="Mobiles Accessories"/>
           </div>
         </div>
       </div>
