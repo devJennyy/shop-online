@@ -6,34 +6,15 @@ import {
 } from "react-icons/md";
 import Categories from "../components/cards/Categories";
 import Discovery from "../components/cards/Discovery";
+import FlashDeals from "@/components/cards/FlashDeals";
 
 const Homepage = () => {
   return (
     <div id="homepage">
-      <div className="flex flex-row justify-center items-center mt-20 gap-2 h-80">
-        <div className="flex flex-col gap-2 h-full">
-          <div className="w-[390px] h-1/2 bg-[#E3E3E3] rounded-md">
-            <img
-              src="/images/small-banner.png"
-              className="object-cover rounded-md h-full w-full "
-            />
-          </div>
-          <div className="w-[390px] h-1/2 bg-[#E3E3E3] rounded-md">
-            <img
-              src="/images/small-banner-two.png"
-              className="object-cover rounded-md h-full w-full "
-            />
-          </div>
-        </div>
+      {/* Flash Deals */}
+      <FlashDeals/>
 
-        <div className="w-full h-full rounded-md">
-          <img
-            src="/images/banner.png"
-            className="object-cover w-full h-full rounded-md"
-          />
-        </div>
-      </div>
-
+      {/* Highlights */}
       <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-16 px-7">
         <div className="flex flex-row justify-between items-center w-full h-full">
           <div className="flex flex-row justify-center items-center gap-3">
@@ -78,6 +59,7 @@ const Homepage = () => {
         </div>
       </div>
 
+      {/* Categories */}
       <div className="flex flex-col mt-20 gap-14">
         <div className="flex flex-col w-full gap-3 flex-1">
           <p className="text-[#666666] text-left">
@@ -114,6 +96,7 @@ const Homepage = () => {
         </div>
       </div>
 
+      {/* Mini Flash Deals */}
       <div className="flex flex-col mt-28 gap-14">
         <div className="flex flex-col w-full gap-3 flex-1">
           <p className="text-[#666666] text-left">
@@ -149,6 +132,7 @@ const Homepage = () => {
         </div>
       </div>
 
+      {/* Discovery */}
       <div className="flex flex-col mt-28 gap-14">
         <div className="flex flex-col w-full gap-3 flex-1">
           <p className="text-[#666666] text-left">
