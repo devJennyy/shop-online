@@ -7,7 +7,6 @@ import {
 import Categories from "../components/cards/Categories";
 import Discovery from "../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
-import LimitedDeals from "@/components/cards/LimitedDeals";
 
 const Homepage = () => {
   return (
