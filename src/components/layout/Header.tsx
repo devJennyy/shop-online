@@ -24,6 +24,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import SignUp from "../forms/SignUp";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
 
 const Header = ({ hasNavbar }: Props) => {
   return (
@@ -119,7 +120,17 @@ const Header = ({ hasNavbar }: Props) => {
                   <img src="/icons/heart.svg" />
                 </button>
 
-                
+                <DropdownMenu>
+                  <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Profile</DropdownMenuItem>
+                    <DropdownMenuItem>Billing</DropdownMenuItem>
+                    <DropdownMenuItem>Team</DropdownMenuItem>
+                    <DropdownMenuItem>Subscription</DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
 
                 <Dialog>
                   <DialogTrigger asChild>
