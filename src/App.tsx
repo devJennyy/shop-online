@@ -5,9 +5,9 @@ import {
   BrowserRouter as Router,
   Navigate,
 } from "react-router-dom";
-import Faqs from "./components/structures/Faqs";
+import Faqs from "./components/layout/Faqs";
 import Homepage from "./Pages/Homepage";
-import HelpCenter from "./components/structures/HelpCenter";
+import HelpCenter from "./components/layout/HelpCenter";
 function App() {
   return (
     <Router>

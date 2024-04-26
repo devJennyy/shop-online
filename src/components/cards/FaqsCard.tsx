@@ -1,5 +1,5 @@
 interface Props {
-  numberCount: string;
+  numberCount: number;
   titleHeader: string;
   details: string;
 }
@@ -21,7 +21,9 @@ const FaqsCard = ({ numberCount, titleHeader, details }: Props) => {
       <AccordionItem value="item-1">
         <AccordionTrigger>
           <div className="flex flex-row gap-5 text-[#0B0D21]">
-            <p className="font-medium">{numberCount}</p>
+            <p className="font-medium">
+              {numberCount < 10 ? `0${numberCount}` : numberCount}
+            </p>
             <p className="font-medium">{titleHeader}</p>
           </div>
         </AccordionTrigger>
@@ -33,7 +35,9 @@ const FaqsCard = ({ numberCount, titleHeader, details }: Props) => {
       <AccordionItem value="item-2">
         <AccordionTrigger>
           <div className="flex flex-row gap-5 text-[#0B0D21]">
-            <p className="font-medium">{numberCount}</p>
+            <p className="font-medium">
+              {numberCount < 10 ? `0${numberCount+1}` : numberCount+1}
+            </p>
             <p className="font-medium">{titleHeader}</p>
           </div>
         </AccordionTrigger>
@@ -45,7 +49,9 @@ const FaqsCard = ({ numberCount, titleHeader, details }: Props) => {
       <AccordionItem value="item-3">
         <AccordionTrigger>
           <div className="flex flex-row gap-5 text-[#0B0D21]">
-            <p className="font-medium">{numberCount}</p>
+            <p className="font-medium">
+              {numberCount < 10 ? `0${numberCount+2}` : numberCount+2}
+            </p>
             <p className="font-medium">{titleHeader}</p>
           </div>
         </AccordionTrigger>

@@ -9,14 +9,14 @@ import Categories from "../components/cards/Categories";
 import Discovery from "../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
 import { BiLogoTelegram, BiSolidTruck } from "react-icons/bi";
-import Header from "@/components/structures/Header";
-import Footer from "@/components/structures/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const Homepage = () => {
   return (
     <div id="homepage">
       {/* Header */}
-      <Header />
+      <Header hasNavbar={true}/>
 
       <div className="w-[1240px] mx-auto h-full px-8">
         {/* Flash Deals */}
