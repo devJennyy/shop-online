@@ -121,7 +121,11 @@ const Header = ({ hasNavbar }: Props) => {
                 </button>
 
                 <DropdownMenu>
-                  <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+                  <DropdownMenuTrigger asChild>
+                  <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md active:scale-95 transition-all">
+                      <img src="/icons/user.svg" />
+                    </button>
+                  </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
@@ -134,9 +138,7 @@ const Header = ({ hasNavbar }: Props) => {
 
                 <Dialog>
                   <DialogTrigger asChild>
-                    <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md active:scale-95 transition-all">
-                      <img src="/icons/user.svg" />
-                    </button>
+                    
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
