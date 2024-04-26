@@ -119,22 +119,14 @@ const Header = ({ hasNavbar }: Props) => {
                   <img src="/icons/heart.svg" />
                 </button>
 
-                <Select>
-                  <SelectTrigger className="flex flex-row justify-center items-center gap-2 outline-none">
+                
+
+                <Dialog>
+                  <DialogTrigger asChild>
                     <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md active:scale-95 transition-all">
                       <img src="/icons/user.svg" />
                     </button>
-                  </SelectTrigger>
-                  <SelectContent className="absolute right-[-40px] mt-2">
-                    <SelectGroup>
-                      <SelectItem value="english">Login</SelectItem>
-                      <SelectItem value="filipino">Sign up</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-
-                <Dialog>
-                  <DialogTrigger asChild></DialogTrigger>
+                  </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
                       <DialogDescription>
