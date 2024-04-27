@@ -175,7 +175,7 @@ const Header = ({ hasNavbar }: Props) => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <Link to={"/login"}><DropdownMenuItem>Login</DropdownMenuItem></Link>
-                    <DropdownMenuItem>Sign Up</DropdownMenuItem>
+                    <Link to={"/signup"}><DropdownMenuItem>Signup</DropdownMenuItem></Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>

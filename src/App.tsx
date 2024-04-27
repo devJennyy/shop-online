@@ -9,6 +9,7 @@ import Faqs from "./Pages/Faqs";
 import Homepage from "./Pages/Homepage";
 import HelpCenter from "./Pages/HelpCenter";
 import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/help-center" element={<HelpCenter />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>
       </div>
