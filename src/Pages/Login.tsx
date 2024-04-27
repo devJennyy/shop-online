@@ -5,6 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { BiSolidHide } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -116,9 +117,9 @@ const Login = () => {
                 <p className="text-[#666666]">
                   New to <span>ShopOnline?</span>
                 </p>
-                <button className="font-semibold underline underline-offset-2">
+                <Link to={"/signup"} className="font-semibold underline underline-offset-2">
                   Sign up
-                </button>
+                </Link>
               </div>
             </div>
           </div>

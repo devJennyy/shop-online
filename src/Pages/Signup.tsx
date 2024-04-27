@@ -58,7 +58,7 @@ const Signup = () => {
           </div>
 
           <div className="w-[500px] h-fit border border-[#E1E3E5] rounded-3xl p-10">
-            <p className="text-[26px] font-semibold">Welcome Back!</p>
+            <p className="text-[26px] font-semibold">Create an account</p>
             <p className="text-[14px] text-[#666666]">
               Please enter your details.
             </p>
