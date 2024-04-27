@@ -63,7 +63,7 @@ const Login = () => {
               Please enter your details.
             </p>
 
-            <div className="flex flex-col w-full gap-6 mt-10 text-[14px]">
+            <div className="flex flex-col w-full gap-4 mt-10 text-[14px]">
               <div className="flex flex-col w-full gap-1">
                 <p className="text-[#666666]">
                   Phone number, user name, or email address
