@@ -17,14 +17,17 @@ import { LuMessagesSquare, LuSearch } from "react-icons/lu";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTrigger,
-} from "../ui/dialog";
-import SignUp from "../forms/SignUp";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../ui/hover-card";
+import { Button } from "../ui/button";
 
 const Header = ({ hasNavbar }: Props) => {
   return (
@@ -108,44 +111,73 @@ const Header = ({ hasNavbar }: Props) => {
               </div>
 
               <div className="flex flex-row justify-center items-center gap-2">
-                <button className="flex flex-row justify-center items-center w-32 h-11 border border-[#E1E3E5] rounded-md gap-3 active:scale-95 transition-all">
-                  <img src="/icons/cart.svg" />
-                  <p className="text-[14px]">Cart</p>
-                  <div className="flex justify-center items-center bg-[#030812] w-5 h-5 rounded-full">
-                    <p className="text-white text-[10px]">2</p>
-                  </div>
-                </button>
+                  <HoverCard openDelay={10} closeDelay={10}>
+                    <HoverCardTrigger asChild>
+                      <Button
+                        variant="link"
+                        className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
+                      >
+                        <img src="/icons/cart.svg" />
+                      </Button>
+                    </HoverCardTrigger>
 
-                <button className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md active:scale-95 transition-all">
-                  <img src="/icons/heart.svg" />
-                </button>
+                    <HoverCardContent className="w-80 h-80">
+                      <div className="flex flex-col justify-center items-center py-4">
+                        <div className="w-48 h-48">
+                          <img
+                            src="/images/cart.png"
+                            className="w-fit h-fit object-cover ml-[10px] gap-5 mt-3"
+                          />
+                        </div>
+                        <div className="flex flex-col justify-center items-center mt-3">
+                          <p className="font-bold">No Orders</p>
+                          <p className="text-[13px] text-[#757575]">
+                            You haven't made any orders yet.
+                          </p>
+                        </div>
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
+
+                <HoverCard openDelay={10} closeDelay={10}>
+                  <HoverCardTrigger asChild>
+                    <Button
+                      variant="link"
+                      className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
+                    >
+                      <img src="/icons/heart.svg" />
+                    </Button>
+                  </HoverCardTrigger>
+
+                  <HoverCardContent className="w-80 h-80">
+                    <div className="flex flex-col justify-center items-center py-2 gap-5">
+                      <div className="w-48 h-48">
+                        <img
+                          src="/images/favourite.svg"
+                          className="w-fit h-fit object-cover"
+                        />
+                      </div>
+                      <div className="flex flex-col justify-center items-center">
+                        <p className="font-bold">No Favorites</p>
+                        <p className="text-[13px] text-[#757575]">
+                          You haven't liked any items yet.
+                        </p>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
 
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                  <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md active:scale-95 transition-all">
+                    <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md">
                       <img src="/icons/user.svg" />
                     </button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-              
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>Login</DropdownMenuItem>
-                    <DropdownMenuItem>Sign up</DropdownMenuItem>
+                    <Link to={"/login"}><DropdownMenuItem>Login</DropdownMenuItem></Link>
+                    <DropdownMenuItem>Sign Up</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-
-                <Dialog>
-                  <DialogTrigger asChild>
-                    
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogHeader>
-                      <DialogDescription>
-                        <SignUp />
-                      </DialogDescription>
-                    </DialogHeader>
-                  </DialogContent>
-                </Dialog>
               </div>
             </div>
           </div>

@@ -5,15 +5,16 @@ import {
   BrowserRouter as Router,
   Navigate,
 } from "react-router-dom";
-import Faqs from "./components/layout/Faqs";
+import Faqs from "./Pages/Faqs";
 import Homepage from "./Pages/Homepage";
-import HelpCenter from "./components/layout/HelpCenter";
+import HelpCenter from "./Pages/HelpCenter";
+import Login from "./Pages/Login";
 function App() {
   return (
     <Router>
       {/* Main Container */}
       <div className="w-full h-fit text-[#0B0D21]">
-        <div className="">
+        <div>
 
           {/* Routes */}
           <Routes>
@@ -21,6 +22,7 @@ function App() {
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/help-center" element={<HelpCenter />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </div>
       </div>

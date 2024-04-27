@@ -1,8 +1,8 @@
 import { LuMessagesSquare, LuSearch } from "react-icons/lu";
-import Footer from "./Footer";
-import MovingCards from "../cards/MovingCards";
-import FaqsCard from "../cards/FaqsCard";
-import Header from "./Header";
+import Footer from "../components/layout/Footer";
+import MovingCards from "../components/cards/MovingCards";
+import FaqsCard from "../components/cards/FaqsCard";
+import Header from "../components/layout/Header";
 
 
 const HelpCenter = () => {
