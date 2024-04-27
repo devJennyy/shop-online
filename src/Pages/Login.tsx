@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { CardContainer, CardItem } from "@/components/ui/3d-card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { BiSolidHide } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa6";
@@ -15,13 +16,43 @@ const Login = () => {
         <div className="flex flex-row justify-between w-full gap-5">
           <div className="flex flex-row w-1/2 h-fit">
             <div className="flex flex-col gap-10 mt-20">
-              <img src="/images/image-three.jpg" className="object-cover w-60 h-60 rounded-[50px]"/>
-              <img src="/images/image-two.jpg" className="object-cover object-center w-60 h-72 rounded-[50px] ml-10"/>
+              <CardContainer className="inter-var">
+                <CardItem translateZ="100">
+                  <img
+                    src="/images/image-three.jpg"
+                    className="object-cover w-60 h-60 rounded-[50px] "
+                  />
+                </CardItem>
+              </CardContainer>
+
+              <CardContainer className="inter-var">
+                <CardItem translateZ="100">
+                  <img
+                    src="/images/image-two.jpg"
+                    className="object-cover object-center w-60 h-72 rounded-[50px] ml-10"
+                  />
+                </CardItem>
+              </CardContainer>
             </div>
 
             <div className="flex flex-col gap-10">
-              <img src="/images/image-one.gif" className="object-cover w-60 h-72 rounded-[50px]"/>
-              <img src="/images/image-four.jpg" className="object-cover w-60 h-60 rounded-[50px] ml-10"/>
+              <CardContainer className="inter-var">
+                <CardItem translateZ="100">
+                  <img
+                    src="/images/image-one.gif"
+                    className="object-cover w-60 h-72 rounded-[50px]"
+                  />
+                </CardItem>
+              </CardContainer>
+              
+              <CardContainer className="inter-var">
+                <CardItem translateZ="100">
+                  <img
+                    src="/images/image-four.jpg"
+                    className="object-cover w-60 h-60 rounded-[50px] ml-10"
+                  />
+                </CardItem>
+              </CardContainer>
             </div>
           </div>
 
@@ -82,8 +113,12 @@ const Login = () => {
               </div>
 
               <div className="flex flex-row justify-center items-center gap-2 mt-5">
-                <p className="text-[#666666]">New to <span>ShopOnline?</span></p>
-                <button className="font-semibold underline underline-offset-2">Sign up</button>
+                <p className="text-[#666666]">
+                  New to <span>ShopOnline?</span>
+                </p>
+                <button className="font-semibold underline underline-offset-2">
+                  Sign up
+                </button>
               </div>
             </div>
           </div>
