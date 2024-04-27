@@ -11,21 +11,21 @@ const Login = () => {
       <Header hasNavbar={false} />
 
       {/* FAQs */}
-      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-32 gap-20">
+      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-20">
         <div className="flex flex-row justify-between w-full gap-5">
           <div className="flex flex-row w-1/2 h-fit">
             <div className="flex flex-col gap-10 mt-20">
-              <div className="w-52 h-52 bg-[#030812] rounded-[50px]"></div>
-              <div className="w-52 h-64 bg-[#030812] rounded-[50px] ml-10"></div>
+              <img src="/images/image-three.jpg" className="object-cover w-60 h-60 rounded-[50px]"/>
+              <img src="/images/image-two.jpg" className="object-cover object-center w-60 h-72 rounded-[50px] ml-10"/>
             </div>
 
             <div className="flex flex-col gap-10">
-              <div className="w-52 h-64 bg-[#030812] rounded-[50px]"></div>
-              <div className="w-52 h-52 bg-[#030812] rounded-[50px] ml-10"></div>
+              <img src="/images/image-one.gif" className="object-cover w-60 h-72 rounded-[50px]"/>
+              <img src="/images/image-four.jpg" className="object-cover w-60 h-60 rounded-[50px] ml-10"/>
             </div>
           </div>
 
-          <div className="w-1/2 h-fit border border-[#E1E3E5] rounded-3xl p-10">
+          <div className="w-[500px] h-fit border border-[#E1E3E5] rounded-3xl p-10">
             <p className="text-[26px] font-semibold">Welcome Back!</p>
             <p className="text-[14px] text-[#666666]">
               Please enter your details.
@@ -68,7 +68,7 @@ const Login = () => {
                 <p className="text-[16px] text-white font-medium">Log in</p>
               </button>
 
-              <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full"></div>
+              <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full"></div>
 
               <div className="flex flex-col gap-2">
                 <button className="flex flex-row justify-center items-center w-full h-11 border border-[#E1E3E5] rounded-full gap-2">
@@ -79,6 +79,11 @@ const Login = () => {
                   <FaFacebook size={20} className="text-[#0C82EE]" />
                   <p>Continue with Facebook</p>
                 </button>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-2 mt-5">
+                <p className="text-[#666666]">New to <span>ShopOnline?</span></p>
+                <button className="font-semibold underline underline-offset-2">Sign up</button>
               </div>
             </div>
           </div>
