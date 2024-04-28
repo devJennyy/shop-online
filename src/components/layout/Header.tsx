@@ -111,7 +111,7 @@ const Header = ({ hasNavbar }: Props) => {
               </div>
 
               <div className="flex flex-row justify-center items-center gap-2">
-                  <HoverCard openDelay={10} closeDelay={10}>
+                  <HoverCard openDelay={20} closeDelay={10}>
                     <HoverCardTrigger asChild>
                       <Button
                         variant="link"
@@ -139,7 +139,7 @@ const Header = ({ hasNavbar }: Props) => {
                     </HoverCardContent>
                   </HoverCard>
 
-                <HoverCard openDelay={10} closeDelay={10}>
+                <HoverCard openDelay={20} closeDelay={10}>
                   <HoverCardTrigger asChild>
                     <Button
                       variant="link"

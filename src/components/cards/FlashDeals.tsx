@@ -5,7 +5,7 @@ const FlashDeals = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000})] );
 
   return (
-    <div className="flex flex-row justify-center items-center mt-20 gap-2 h-80">
+    <div className="flex flex-row justify-center items-center mt-16 gap-2 h-80">
       <div className="flex flex-col gap-2 h-full">
         <button className="w-[390px] h-1/2 bg-[#E3E3E3] rounded-md">
           <img

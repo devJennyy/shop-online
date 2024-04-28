@@ -1,12 +1,10 @@
-import Footer from "@/components/layout/Footer"
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import { CardContainer, CardItem } from "@/components/ui/3d-card"
-import { Checkbox } from "@radix-ui/react-checkbox"
-import { BiSolidHide } from "react-icons/bi"
-import { FaFacebook } from "react-icons/fa"
-import { FcGoogle } from "react-icons/fc"
+import { CardContainer, CardItem } from "@/components/ui/3d-card";
+import { BiSolidHide } from "react-icons/bi";
+import { FaFacebook } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
-
 
 const Signup = () => {
   return (
@@ -46,7 +44,7 @@ const Signup = () => {
                   />
                 </CardItem>
               </CardContainer>
-              
+
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
@@ -59,20 +57,40 @@ const Signup = () => {
           </div>
 
           <div className="w-[500px] h-fit border border-[#E1E3E5] rounded-3xl p-10">
-            <p className="text-[26px] font-semibold">Sign up now</p>
+            <p className="text-[26px] font-semibold">Create an account</p>
+            <p className="text-[14px] text-[#666666]">Lorem Ipsum Dolor.</p>
 
-            <div className="flex flex-col w-full gap-4 mt-5 text-[14px]">
+            <div className="flex flex-col w-full gap-4 mt-10 text-[14px]">
+              <div className="flex flex-row gap-4">
               <div className="flex flex-col w-full gap-1">
-                <p className="text-[#666666]">
-                  Phone number
-                </p>
+                <p className="text-[#666666]">First name</p>
+                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <p className="text-[#666666]">Last name</p>
+                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+              </div>
+              </div>
+
+              <div className="flex flex-col w-full gap-1">
+                <p className="text-[#666666]">Email address or phone number</p>
                 <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
               </div>
 
-              
+              <div className="flex flex-col w-full gap-1">
+                <div className="flex flex-row justify-between text-[#666666]">
+                  <p>Password</p>
+                  <button className="flex flex-row justify-center items-center gap-2">
+                    <BiSolidHide size={20} className="text-[#666666]/80" />
+                    <p>Hide</p>
+                  </button>
+                </div>
 
-              <button className="flex justify-center items-center w-full h-12 bg-[#030812] rounded-xl mt-2 active:scale-95 transition-all">
-                <p className="text-[16px] text-white font-medium">Next</p>
+                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+              </div>
+
+              <button className="flex justify-center items-center w-full h-12 bg-[#030812] rounded-xl mt-4 active:scale-95 transition-all">
+                <p className="text-[16px] text-white font-medium">Create account</p>
               </button>
 
               <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full"></div>
@@ -89,10 +107,11 @@ const Signup = () => {
               </div>
 
               <div className="flex flex-row justify-center items-center gap-2 mt-5">
-                <p className="text-[#666666]">
-                  Already have an account?
-                </p>
-                <Link to={"/login"} className="font-semibold underline underline-offset-2">
+                <p className="text-[#666666]">Already have an account?</p>
+                <Link
+                  to={"/login"}
+                  className="font-semibold underline underline-offset-2"
+                >
                   Log in
                 </Link>
               </div>
@@ -106,7 +125,7 @@ const Signup = () => {
         <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;
