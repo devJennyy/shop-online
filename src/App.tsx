@@ -5,11 +5,11 @@ import {
   BrowserRouter as Router,
   Navigate,
 } from "react-router-dom";
-import Faqs from "./Pages/Faqs";
-import Homepage from "./Pages/Homepage";
-import HelpCenter from "./Pages/HelpCenter";
-import Login from "./Pages/Login";
-import Signup from "./Pages/Signup";
+import Faqs from "./Pages/Faqs/Faqs";
+import Login from "./Pages/Forms/Login";
+import Signup from "./Pages/Forms/Signup";
+import HelpCenter from "./Pages/HelpCenter/HelpCenter";
+import Homepage from "./Pages/Homepage/Homepage";
 function App() {
   return (
     <Router>

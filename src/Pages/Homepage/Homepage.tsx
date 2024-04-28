@@ -5,8 +5,8 @@ import {
   MdOutlineSupportAgent,
   MdPayment,
 } from "react-icons/md";
-import Categories from "../components/cards/Categories";
-import Discovery from "../components/cards/Discovery";
+import Categories from "../../components/cards/Categories";
+import Discovery from "../../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
 import { BiLogoTelegram, BiSolidTruck } from "react-icons/bi";
 import Header from "@/components/layout/Header";
