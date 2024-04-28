@@ -10,6 +10,7 @@ import Login from "./Pages/Forms/Login";
 import Signup from "./Pages/Forms/Signup";
 import HelpCenter from "./Pages/HelpCenter/HelpCenter";
 import Homepage from "./Pages/Homepage/Homepage";
+import Shop from "./Pages/Items/ShopPage/Shop";
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
             <Route path="/help-center" element={<HelpCenter />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </div>
       </div>

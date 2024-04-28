@@ -246,7 +246,7 @@ const Homepage = () => {
         </div>
 
         {/* Footer */}
-        <Footer />
+        <Footer hasBorder={false}/>
       </div>
     </div>
   );

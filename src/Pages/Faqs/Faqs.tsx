@@ -7,8 +7,8 @@ const Faqs = () => {
     <div className="w-full">
       <Header hasNavbar={false}/>
 
-      {/* FAQs */}
-      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-32 gap-20">
+      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-32 gap-20">
+        {/* FAQs */}
         <div className="flex flex-col justify-center items-center gap-2">
           <p className="text-[40px] font-medium">Frequently Ask Questions</p>
           <p className="text-[16px] text-[#666666]">
@@ -44,10 +44,8 @@ const Faqs = () => {
           </div>
         </div>
 
-        <div className="w-full border-b border-[#EDEDED] mt-28"></div>
-
         {/* Footer */}
-        <Footer />
+        <Footer hasBorder={true}/>
       </div>
     </div>
   );

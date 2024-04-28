@@ -4,16 +4,15 @@ import MovingCards from "../../components/cards/MovingCards";
 import FaqsCard from "../../components/cards/FaqsCard";
 import Header from "../../components/layout/Header";
 
-
 const HelpCenter = () => {
   return (
     <div className="w-full">
       <div className="w-full text-white bg-[#030812]">
-       <Header hasNavbar={false} />
+        <Header hasNavbar={false} />
       </div>
 
-      {/* Help Center */}
       <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-32 gap-20">
+        {/* Help Center */}
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="flex flex-col justify-center items-center gap-5 w-full">
             <p className="text-[40px] font-medium">Hi, how can we help?</p>
@@ -72,10 +71,8 @@ const HelpCenter = () => {
           </div>
         </div>
 
-        <div className="w-full border-b border-[#EDEDED] mt-28"></div>
-
         {/* Footer */}
-        <Footer />
+        <Footer hasBorder={true}/>
       </div>
     </div>
   );

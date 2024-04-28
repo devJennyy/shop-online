@@ -1,7 +1,8 @@
 import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/Header"
 
-const Shop = () => {
+
+const ShopOne = () => {
   return (
     <div id="homepage">
       {/* Header */}
@@ -17,4 +18,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default ShopOne

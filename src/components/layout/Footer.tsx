@@ -1,3 +1,7 @@
+interface Props {
+  hasBorder: boolean;
+}
+
 import {
   FaTwitter,
   FaFacebookF,
@@ -8,9 +12,12 @@ import {
   FaGooglePlay,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ( {hasBorder} : Props) => {
   return (
     <div className="flex flex-col gap-20 w-full">
+      {hasBorder && (<div className="w-full border-b border-[#EDEDED] mt-28"></div>)}
+      
+
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-col items-center gap-8 w-80">
           <button>
