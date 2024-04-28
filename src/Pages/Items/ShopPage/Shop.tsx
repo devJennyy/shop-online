@@ -10,7 +10,7 @@ const Shop = () => {
 
       <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12 gap-20">
         {/* Container */}
-        <div className="flex flex-row justify-between w-full h-[100vh]">
+        <div className="flex flex-row justify-between w-full h-fit">
           {/* Filters */}
           <div className="w-[450px] h-full">
             <p className="text-[20px] font-semibold">Filters</p>
@@ -91,15 +91,21 @@ const Shop = () => {
 
             <div className="flex flex-col">
               <div className="flex flex-row mt-5 gap-4">
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={false}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={true}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={false}/>
               </div>
 
               <div className="flex flex-row mt-5 gap-4">
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
-                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={false}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={false}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={false}/>
+              </div>
+
+              <div className="flex flex-row mt-5 gap-4">
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={true}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={true}/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00" sold={true}/>
               </div>
             </div>
           </div>
