@@ -9,10 +9,6 @@ const Shop = () => {
 
       <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12 gap-20">
         {/* Container */}
-        <p className="flex justify-center items-center text-[42px]">
-          Ultimate Sales Collection!
-        </p>
-
         <div className="flex flex-row justify-between w-full h-[100vh]">
           {/* Filters */}
           <div className="w-[450px] h-full">
@@ -94,34 +90,57 @@ const Shop = () => {
           <div className="w-full h-full ">
             <p>Best Selling</p>
 
-            <div className="flex flex-row mt-5">
+            <div className="flex flex-row mt-5 gap-5">
               <button className="flex w-[300px] h-[400px] border border-[#E0E0E0] rounded-md">
-                <div className="flex flex-col justify-center items-center p-4 w-full gap-6 mt-2">
-                  <img
-                    src="/images/mens-apparel.png"
-                    className="flex justify-center items-center object-scale-down w-fit h-fit"
-                  />
+                <div className="flex flex-col justify-center items-center p-4 w-full">
+                  <div className="w-full h-[260px]">
+                    <img
+                      src="/images/shop-item/item-one.png"
+                      className="flex justify-center items-center object-cover w-full h-full"
+                    />
+                  </div>
 
-                  <div className="flex flex-col justify-center items-start w-full">
-                    <div className="flex flex-row gap-3">
-                      <p className="font-medium">$10.30</p>
-                      
+                  <div className="flex flex-col items-start w-full mt-5">
+                    <div className=" flex flex-col text-start gap-1">
+                      <p className="font-medium">Boxy Denim Hat</p>
+
+                      <p className="text-[14px]">$ 25.00</p>
                     </div>
-                    <p className="text-[14px] text-[#8B96A5]">
-                      T-shirts for Men
-                    </p>
-                    <div className="flex flex-row justify-between w-full mt-6">
-                     <div className="flex flex-row justify-center items-center gap-2">
-                      <div className="w-3 h-3 bg-blue-900 rounded-full outline outline-1 outline-offset-2"></div>
-                      <div className="w-4 h-4 bg-black rounded-full"></div>
-                      <div className="w-4 h-4 bg-yellow-200 rounded-full"></div>
 
-                     </div>
+                    <div className="flex flex-row justify-center items-center gap-3 mt-4">
+                      <div className="w-4 h-4 bg-[#B1C5D4] rounded-full outline outline-1 outline-offset-2"></div>
+                      <div className="w-5 h-5 bg-[#063E66] rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
+              <button className="flex w-[300px] h-[400px] border border-[#E0E0E0] rounded-md">
+                <div className="flex flex-col justify-center items-center p-4 w-full">
+                  <div className="w-full h-[260px]">
+                    <img
+                      src="/images/shop-item/item-one.png"
+                      className="flex justify-center items-center object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <div className="flex flex-col items-start w-full mt-5">
+                    <div className=" flex flex-col text-start gap-1">
+                      <p className="font-medium">Boxy Denim Hat</p>
+
+                      <p className="text-[14px]">$ 25.00</p>
+                    </div>
+
+                    <div className="flex flex-row justify-center items-center gap-3 mt-4">
+                      <div className="w-4 h-4 bg-[#B1C5D4] rounded-full outline outline-1 outline-offset-2"></div>
+                      <div className="w-5 h-5 bg-[#063E66] rounded-full"></div>
                     </div>
                   </div>
                 </div>
               </button>
             </div>
+
+            
           </div>
         </div>
 
