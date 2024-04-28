@@ -13,7 +13,7 @@ const Login = () => {
       <Header hasNavbar={false} />
 
       {/* FAQs */}
-      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-20">
+      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-10">
         <div className="flex flex-row justify-between w-full gap-5">
           <div className="flex flex-row w-1/2 h-full">
             <div className="flex flex-col gap-10 mt-20">
@@ -45,7 +45,7 @@ const Login = () => {
                   />
                 </CardItem>
               </CardContainer>
-              
+
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
@@ -117,7 +117,10 @@ const Login = () => {
                 <p className="text-[#666666]">
                   New to <span>ShopOnline?</span>
                 </p>
-                <Link to={"/signup"} className="font-semibold underline underline-offset-2">
+                <Link
+                  to={"/signup"}
+                  className="font-semibold underline underline-offset-2"
+                >
                   Sign up
                 </Link>
               </div>
@@ -125,10 +128,8 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="w-full border-b border-[#EDEDED] mt-28"></div>
-
         {/* Footer */}
-        <Footer />
+        <Footer hasBorder={true} />
       </div>
     </div>
   );

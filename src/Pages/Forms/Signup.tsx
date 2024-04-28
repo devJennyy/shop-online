@@ -12,7 +12,7 @@ const Signup = () => {
       <Header hasNavbar={false} />
 
       {/* FAQs */}
-      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-20">
+      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-10">
         <div className="flex flex-row justify-between w-full gap-5">
           <div className="flex flex-row w-1/2 h-fit">
             <div className="flex flex-col gap-10 mt-20">
@@ -62,14 +62,14 @@ const Signup = () => {
 
             <div className="flex flex-col w-full gap-4 mt-10 text-[14px]">
               <div className="flex flex-row gap-4">
-              <div className="flex flex-col w-full gap-1">
-                <p className="text-[#666666]">First name</p>
-                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
-              </div>
-              <div className="flex flex-col w-full gap-1">
-                <p className="text-[#666666]">Last name</p>
-                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
-              </div>
+                <div className="flex flex-col w-full gap-1">
+                  <p className="text-[#666666]">First name</p>
+                  <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                </div>
+                <div className="flex flex-col w-full gap-1">
+                  <p className="text-[#666666]">Last name</p>
+                  <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                </div>
               </div>
 
               <div className="flex flex-col w-full gap-1">
@@ -90,7 +90,9 @@ const Signup = () => {
               </div>
 
               <button className="flex justify-center items-center w-full h-12 bg-[#030812] rounded-xl mt-4 active:scale-95 transition-all">
-                <p className="text-[16px] text-white font-medium">Create account</p>
+                <p className="text-[16px] text-white font-medium">
+                  Create account
+                </p>
               </button>
 
               <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full"></div>
@@ -119,10 +121,8 @@ const Signup = () => {
           </div>
         </div>
 
-        <div className="w-full border-b border-[#EDEDED] mt-28"></div>
-
         {/* Footer */}
-        <Footer />
+        <Footer hasBorder={true} />
       </div>
     </div>
   );
