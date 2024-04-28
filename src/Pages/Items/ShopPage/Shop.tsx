@@ -91,15 +91,15 @@ const Shop = () => {
 
             <div className="flex flex-col">
               <div className="flex flex-row mt-5 gap-4">
-                <ShopCard />
-                <ShopCard />
-                <ShopCard />
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
               </div>
 
               <div className="flex flex-row mt-5 gap-4">
-                <ShopCard />
-                <ShopCard />
-                <ShopCard />
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
+                <ShopCard image="/images/shop-item/item-one.png" itemName="Boxy Denim Hat" itemPrice="$25.00"/>
               </div>
             </div>
           </div>
