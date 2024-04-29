@@ -25,8 +25,35 @@ const ProductPage = () => {
           </div>
 
           {/* Content */}
-          <div className=" flex w-full h-full ml-20">
-            <p className="text-[18px] font-semibold">Best Selling</p>
+          <div className=" flex flex-col w-full h-full ml-20">
+            <p className="uppercase text-[14px] text-[#666666]">Shop Name</p>
+            <p className="text-[18px] font-semibold">Boxy Denim Hat</p>
+            <p>$ 39.00</p>
+
+            <div className="flex justify-start items-center bg-red-400 w-full h-10">
+              <p>Hurry up! Sale ends in:</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+                <p className="text-[16px] font-medium">Size</p>
+
+                <div className="flex flex-row gap-3 text-[14px]">
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md bg-[#030812] text-white">
+                    S
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    M
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    L
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    XL
+                  </button>
+                </div>
+
+                
+              </div>
 
           </div>
         </div>
