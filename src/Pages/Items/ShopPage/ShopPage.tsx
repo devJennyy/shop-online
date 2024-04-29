@@ -2,8 +2,9 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import ShopCard from "./components/ShopCard";
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { Link } from "react-router-dom";
 
-const Shop = () => {
+const ShopPage = () => {
   return (
     <div id="homepage">
       {/* Header */}
@@ -91,12 +92,14 @@ const Shop = () => {
 
             <div className="flex flex-col">
               <div className="flex flex-row mt-5 gap-4">
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice="$25.00"
-                  sold={false}
-                />
+                <Link to={"/product-page"}>
+                  <ShopCard
+                    image="/images/shop-item/item-one.png"
+                    itemName="Boxy Denim Hat"
+                    itemPrice="$25.00"
+                    sold={false}
+                  />
+                </Link>
                 <ShopCard
                   image="/images/shop-item/item-one.png"
                   itemName="Boxy Denim Hat"
@@ -189,4 +192,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopPage;

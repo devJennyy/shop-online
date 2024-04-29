@@ -24,7 +24,7 @@ const FlashDeals = () => {
       </div>
 
       {/* Shop Page */}
-      <Link to={"/Shop"}
+      <Link to={"/shop-page"}
         className="embla mx-auto max-w-full h-full rounded-md"
         ref={emblaRef}
       >
