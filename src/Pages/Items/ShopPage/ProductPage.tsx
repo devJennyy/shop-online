@@ -40,22 +40,24 @@ const ProductPage = () => {
               </p>
             </div>
 
-            <div className="flex flex-col gap-2 mt-4">
-              <p className="text-[16px] font-medium">Size</p>
+            <div className="flex flex-col gap-6 mt-4">
+              <div className="flex flex-col gap-2">
+                <p className="text-[16px] font-medium">Size</p>
 
-              <div className="flex flex-row gap-3 text-[14px]">
-                <button className="flex justify-center items-center border w-11 h-11 rounded-md bg-[#030812] text-white">
-                  S
-                </button>
-                <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                  M
-                </button>
-                <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                  L
-                </button>
-                <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                  XL
-                </button>
+                <div className="flex flex-row gap-3 text-[14px]">
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md bg-[#030812] text-white">
+                    S
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    M
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    L
+                  </button>
+                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
+                    XL
+                  </button>
+                </div>
               </div>
 
               <div className="flex flex-col gap-2">
