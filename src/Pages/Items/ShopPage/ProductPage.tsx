@@ -34,11 +34,13 @@ const ProductPage = () => {
               </div>
             </div>
 
-            <div className="flex justify-start items-center bg-red-400 w-full h-10">
-              <p>Hurry up! Sale ends in:</p>
+            <div className="flex justify-start items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#FF706B] rounded-sm">
+              <p className="text-[#FF706B] text-[14px] ml-4">
+                Hurry up! Sale ends in:
+              </p>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mt-4">
               <p className="text-[16px] font-medium">Size</p>
 
               <div className="flex flex-row gap-3 text-[14px]">
