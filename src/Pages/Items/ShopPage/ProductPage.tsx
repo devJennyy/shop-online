@@ -11,18 +11,18 @@ const ProductPage = () => {
         {/* Container */}
         <div className="flex flex-row justify-between w-full h-fit">
           {/* Filters */}
-          <div className="w-[780px] h-full">
-            <div className="w-full h-[400px] bg-slate-500"></div>
+          <div className="w-1/2 h-full">
+            <div className="w-full h-[450px] bg-slate-500"></div>
             <div className="flex flex-row justify-between items-center w-full mt-4 gap-2">
-              <div className="w-full h-20 bg-slate-600"></div>
-              <div className="w-full h-20 bg-slate-600"></div>
-              <div className="w-full h-20 bg-slate-600"></div>
-              <div className="w-full h-20 bg-slate-600"></div>
+              <div className="w-full h-28 bg-slate-600"></div>
+              <div className="w-full h-28 bg-slate-600"></div>
+              <div className="w-full h-28 bg-slate-600"></div>
+              <div className="w-full h-28 bg-slate-600"></div>
             </div>
           </div>
 
           {/* Content */}
-          <div className=" flex flex-col w-full h-full ml-20">
+          <div className=" flex flex-col w-1/2 h-full pl-10">
             <p className="uppercase text-[14px] text-[#666666]">Shop Name</p>
             <p className="text-[18px] font-semibold">Boxy Denim Hat</p>
 
