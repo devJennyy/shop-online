@@ -25,7 +25,14 @@ const ProductPage = () => {
           <div className=" flex flex-col w-full h-full ml-20">
             <p className="uppercase text-[14px] text-[#666666]">Shop Name</p>
             <p className="text-[18px] font-semibold">Boxy Denim Hat</p>
-            <p>$ 39.00</p>
+
+            <div className="flex flex-row items-center gap-3 my-4">
+              <p className="text-[18px] font-bold">$ 39.00</p>
+              <p className="text-[12px] text-[#666666] line-through">$ 39.00</p>
+              <div className="flex justify-center items-center w-14 h-5 bg-red-600 rounded-full">
+                <p className="uppercase text-[8px] text-white">Save 33%</p>
+              </div>
+            </div>
 
             <div className="flex justify-start items-center bg-red-400 w-full h-10">
               <p>Hurry up! Sale ends in:</p>
