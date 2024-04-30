@@ -83,6 +83,21 @@ const ShopPage = () => {
                   <button className="hover:text-[#030812]">Accessories</button>
                 </div>
               </div>
+
+              <div className="flex flex-col gap-4">
+                <p className="text-[16px] font-medium">Tags</p>
+
+                <div className="flex flex-col items-start gap-3 text-[#666666] text-[14px]">
+                  <button className="hover:text-[#030812]">Fashion</button>
+                  <button className="hover:text-[#030812]">Hats</button>
+                  <button className="hover:text-[#030812]">Sandal</button>
+                  <button className="hover:text-[#030812]">Belt</button>
+                  <button className="hover:text-[#030812]">Bags</button>
+                  <button className="hover:text-[#030812]">Sunglasses</button>
+                  <button className="hover:text-[#030812]">Beachwear</button>
+                  <button className="hover:text-[#030812]">Snacker</button>
+                </div>
+              </div>
             </div>
           </div>
 
