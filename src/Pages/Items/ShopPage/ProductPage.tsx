@@ -1,5 +1,8 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { FaMinus, FaPlus } from "react-icons/fa";
+import { GoPlus } from "react-icons/go";
+import { LuMinus, LuPlus } from "react-icons/lu";
 
 const ProductPage = () => {
   return (
@@ -83,6 +86,15 @@ const ProductPage = () => {
 
               <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Quantity</p>
+                <div className="flex flex-row justify-center">
+                <div className="flex justify-center items-center w-10 h-10 border">
+                <LuMinus size={14}/>
+                </div>
+                <p className="flex justify-center items-center border-t border-b w-10 h-10">1</p>
+                <div className="flex justify-center items-center w-10 h-10 border">
+                <LuPlus size={14}/>
+                </div>
+                </div>
               </div>
             </div>
           </div>
