@@ -1,7 +1,5 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import { FaMinus, FaPlus } from "react-icons/fa";
-import { GoPlus } from "react-icons/go";
 import { LuMinus, LuPlus } from "react-icons/lu";
 
 const ProductPage = () => {
