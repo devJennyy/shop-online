@@ -12,7 +12,6 @@ const ProductPage = () => {
         <div className="flex flex-row justify-between w-full h-fit">
           {/* Picture */}
           <div className="flex flex-row w-fit h-[600px] gap-4">
-            
             <div className="flex flex-col justify-between w-full h-full gap-4">
               <div className="w-28 h-full bg-slate-600"></div>
               <div className="w-28 h-full bg-slate-600"></div>
@@ -20,12 +19,10 @@ const ProductPage = () => {
               <div className="w-28 h-full bg-slate-600"></div>
             </div>
 
-            
             <img
               src="/images/shop-item/item-onee.png"
               className="w-full h-full object-cover"
             />
-          
           </div>
 
           {/* Content */}
@@ -46,8 +43,17 @@ const ProductPage = () => {
                 Hurry up! Sale ends in:
               </p>
             </div>
+            <div className="flex flex-col justify-start items-start mt-8 gap-2">
+              <p className="text-[12px] font-normal">
+                Only <span className="font-bold">9</span> item(s) left in stock!
+              </p>
 
-            <div className="flex flex-col gap-6 mt-4">
+              <div className="w-full h-1 bg-[#DEDEDE] rounded-full">
+              <div className="w-10 h-1 bg-[#EF2D2D] rounded-full"></div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-6 mt-8">
               <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Size</p>
 
