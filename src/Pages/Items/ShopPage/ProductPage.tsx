@@ -52,7 +52,7 @@ const ProductPage = () => {
               </p>
 
               <div className="w-full h-1 bg-[#DEDEDE] rounded-full">
-              <div className="w-10 h-1 bg-[#EF2D2D] rounded-full"></div>
+                <div className="w-10 h-1 bg-[#EF2D2D] rounded-full"></div>
               </div>
             </div>
 
@@ -86,14 +86,23 @@ const ProductPage = () => {
 
               <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Quantity</p>
-                <div className="flex flex-row justify-center">
-                <div className="flex justify-center items-center w-10 h-10 border">
-                <LuMinus size={14}/>
-                </div>
-                <p className="flex justify-center items-center border-t border-b w-10 h-10">1</p>
-                <div className="flex justify-center items-center w-10 h-10 border">
-                <LuPlus size={14}/>
-                </div>
+                <div className="flex flex-row justify-start gap-5">
+                  <div className="flex flex-row">
+                  <div className="flex justify-center items-center w-10 h-10 border rounded-tl-sm rounded-bl-sm">
+                    <LuMinus size={14} />
+                  </div>
+                  <p className="flex justify-center items-center border-t border-b w-10 h-10">
+                    1
+                  </p>
+                  <div className="flex justify-center items-center w-10 h-10 border rounded-tr-sm rounded-br-sm">
+                    <LuPlus size={14} />
+                  </div>
+                  </div>
+                
+                  <div className="flex justify-center items-center w-full h-10 bg-black rounded-sm">
+                    <p className="text-white">Add to cart</p>
+
+                  </div>
                 </div>
               </div>
             </div>
