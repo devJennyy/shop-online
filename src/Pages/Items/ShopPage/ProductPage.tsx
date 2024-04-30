@@ -86,20 +86,19 @@ const ProductPage = () => {
                 <p className="text-[16px] font-medium">Quantity</p>
                 <div className="flex flex-row justify-start gap-5">
                   <div className="flex flex-row">
-                  <div className="flex justify-center items-center w-16 h-11 border rounded-tl-md rounded-bl-md">
-                    <LuMinus size={14} />
+                    <div className="flex justify-center items-center w-16 h-11 border rounded-tl-md rounded-bl-md">
+                      <LuMinus size={14} />
+                    </div>
+                    <p className="flex justify-center items-center border-t border-b w-16 h-11">
+                      1
+                    </p>
+                    <div className="flex justify-center items-center w-16 h-11 border rounded-tr-md rounded-br-md">
+                      <LuPlus size={14} />
+                    </div>
                   </div>
-                  <p className="flex justify-center items-center border-t border-b w-16 h-11">
-                    1
-                  </p>
-                  <div className="flex justify-center items-center w-16 h-11 border rounded-tr-md rounded-br-md">
-                    <LuPlus size={14} />
-                  </div>
-                  </div>
-                
+
                   <div className="flex justify-center items-center w-full h-11 bg-black rounded-md">
                     <p className="text-white">Add to cart</p>
-
                   </div>
                 </div>
               </div>
