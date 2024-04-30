@@ -11,14 +11,21 @@ const ProductPage = () => {
         {/* Container */}
         <div className="flex flex-row justify-between w-full h-fit">
           {/* Filters */}
-          <div className="w-1/2 h-full">
-            <div className="w-full h-[450px] bg-slate-500"></div>
-            <div className="flex flex-row justify-between items-center w-full mt-4 gap-2">
-              <div className="w-full h-28 bg-slate-600"></div>
-              <div className="w-full h-28 bg-slate-600"></div>
-              <div className="w-full h-28 bg-slate-600"></div>
-              <div className="w-full h-28 bg-slate-600"></div>
+          <div className="flex flex-row w-fit h-[600px] gap-4">
+            
+            <div className="flex flex-col justify-between w-full h-full gap-4">
+              <div className="w-28 h-full bg-slate-600"></div>
+              <div className="w-28 h-full bg-slate-600"></div>
+              <div className="w-28 h-full bg-slate-600"></div>
+              <div className="w-28 h-full bg-slate-600"></div>
             </div>
+
+            
+            <img
+              src="/images/shop-item/item-onee.png"
+              className="w-full h-full object-cover"
+            />
+          
           </div>
 
           {/* Content */}
