@@ -10,7 +10,7 @@ const ProductPage = () => {
       <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12 gap-20">
         {/* Container */}
         <div className="flex flex-row justify-between w-full h-fit">
-          {/* Filters */}
+          {/* Picture */}
           <div className="flex flex-row w-fit h-[600px] gap-4">
             
             <div className="flex flex-col justify-between w-full h-full gap-4">
@@ -31,18 +31,18 @@ const ProductPage = () => {
           {/* Content */}
           <div className=" flex flex-col w-1/2 h-full pl-10">
             <p className="uppercase text-[14px] text-[#666666]">Shop Name</p>
-            <p className="text-[18px] font-semibold">Boxy Denim Hat</p>
+            <p className="text-[30px] font-semibold">Boxy Denim Hat</p>
 
             <div className="flex flex-row items-center gap-3 my-4">
-              <p className="text-[18px] font-bold">$ 39.00</p>
-              <p className="text-[12px] text-[#666666] line-through">$ 39.00</p>
-              <div className="flex justify-center items-center w-14 h-5 bg-red-600 rounded-full">
-                <p className="uppercase text-[8px] text-white">Save 33%</p>
+              <p className="text-[24px] font-bold">$39.00</p>
+              <p className="text-[#666666] line-through">$59.00</p>
+              <div className="flex justify-center items-center w-16 h-5 bg-[#DA3F3F] rounded-full">
+                <p className="uppercase text-[10px] text-white">Save 33%</p>
               </div>
             </div>
 
-            <div className="flex justify-start items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#FF706B] rounded-sm">
-              <p className="text-[#FF706B] text-[14px] ml-4">
+            <div className="flex justify-start items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#F8CCCC] rounded-sm">
+              <p className="text-[#FF706B] text-[14px] font-medium ml-3">
                 Hurry up! Sale ends in:
               </p>
             </div>
