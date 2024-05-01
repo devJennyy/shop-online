@@ -73,10 +73,10 @@ const ShopPage = () => {
       sold: false,
     },
     {
-      image: "/images/shop-item/item-nine.jpg",
-      itemName: "Men's Short Sleeve T-Shirt",
+      image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
+      itemName: "Topstitched Sweatshirt",
       price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
+      colors: ["bg-[#EBE6DB]"],
       sold: true,
     },
     {
