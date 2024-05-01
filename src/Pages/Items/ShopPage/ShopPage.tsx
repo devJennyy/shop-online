@@ -70,7 +70,7 @@ const ShopPage = () => {
       itemName: "Fashion Blazer & Pants",
       price: 10.15,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
-      sold: true,
+      sold: false,
     },
     {
       image: "/images/shop-item/item-nine.jpg",
