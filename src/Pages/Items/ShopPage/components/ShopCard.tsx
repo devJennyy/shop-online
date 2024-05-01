@@ -31,7 +31,7 @@ const ShopCard = ({ image, itemName, itemPrice, sold, colors }: Props) => {
             <p className="text-[14px]">${itemPrice.toFixed(2)}</p>
           </div>
 
-          <div className="flex flex-row justify-center items-center gap-3 mt-4">
+          <div className="flex flex-row justify-center items-center gap-2 mt-4">
             {colors?.map((color, index) => {
               return (
                 <div className={`${color} ${index == 0 ? `w-4 h-4 outline outline-1 outline-offset-2` : `w-5 h-5`} rounded-full`}></div>
