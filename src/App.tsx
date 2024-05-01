@@ -10,7 +10,7 @@ import Login from "./Pages/Forms/Login";
 import Signup from "./Pages/Forms/Signup";
 import HelpCenter from "./Pages/HelpCenter/HelpCenter";
 import Homepage from "./Pages/Homepage/Homepage";
-import ProductPage from "./Pages/Items/ShopPage/ProductPage";
+import ProductPage from "./Pages/Items/ProductPage/ProductPage";
 import ShopPage from "./Pages/Items/ShopPage/ShopPage";
 function App() {
   return (

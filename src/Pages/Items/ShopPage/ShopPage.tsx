@@ -3,8 +3,13 @@ import Header from "@/components/layout/Header";
 import ShopCard from "./components/ShopCard";
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 import { Link } from "react-router-dom";
+import Filters from "./components/Filters";
 
 const ShopPage = () => {
+const sizes = ["S", "M", "L", "XL"]
+const colors = ["bg-[#000000]", "bg-[#EBE6DB]", "bg-[#B1C5D4]", "bg-[#C6AEC7]", "bg-[#836953]", "bg-[#6CB9FF]", 
+"bg-[#FFD1DC]", "bg-[#C1E1C1]", "bg-[#C6AEC7]", "bg-[#063E66]", "bg-[#FFD700]", "bg-[#FF6C6C]"]
+
   return (
     <div id="homepage">
       {/* Header */}
@@ -14,92 +19,7 @@ const ShopPage = () => {
         {/* Container */}
         <div className="flex flex-row justify-between w-full h-fit">
           {/* Filters */}
-          <div className="w-[450px] h-full">
-            <p className="text-[18px] font-semibold">Filters</p>
-
-            <div className="flex flex-col text-start gap-10 mt-5">
-              <div className="flex flex-col gap-4">
-                <p className="text-[16px] font-medium">Size</p>
-
-                <div className="flex flex-row gap-3 text-[14px]">
-                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                    S
-                  </button>
-                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                    M
-                  </button>
-                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                    L
-                  </button>
-                  <button className="flex justify-center items-center border w-11 h-11 rounded-md hover:bg-[#030812] hover:text-white active:bg-[#030812]">
-                    XL
-                  </button>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <p className="text-[16px] font-medium">Colors</p>
-
-                <div className="flex flex-col gap-2">
-                  <div className="flex flex-row gap-2">
-                    <div className="w-7 h-7 rounded-full bg-black"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#EBE6DB]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#B1C5D4]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#C6AEC7]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#836953]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#6CB9FF]"></div>
-                  </div>
-
-                  <div className="flex flex-row gap-2">
-                    <div className="w-7 h-7 rounded-full bg-[#FFD1DC]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#C1E1C1]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#C6AEC7]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#063E66]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#FFD700]"></div>
-                    <div className="w-7 h-7 rounded-full bg-[#FF6C6C]"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <p className="text-[16px] font-medium">Prices</p>
-
-                <div className="flex flex-col items-start gap-3 text-[#666666] text-[14px]">
-                  <button className="hover:text-[#030812]">$0-$50</button>
-                  <button className="hover:text-[#030812]">$50-$100</button>
-                  <button className="hover:text-[#030812]">$100-$150</button>
-                  <button className="hover:text-[#030812]">$150-$200</button>
-                  <button className="hover:text-[#030812]">$300-$400</button>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <p className="text-[16px] font-medium">Collections</p>
-
-                <div className="flex flex-col items-start gap-3 text-[#666666] text-[14px]">
-                  <button className="hover:text-[#030812]">All products</button>
-                  <button className="hover:text-[#030812]">Best sellers</button>
-                  <button className="hover:text-[#030812]">New arrivals</button>
-                  <button className="hover:text-[#030812]">Accessories</button>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <p className="text-[16px] font-medium">Tags</p>
-
-                <div className="flex flex-col items-start gap-3 text-[#666666] text-[14px]">
-                  <button className="hover:text-[#030812]">Fashion</button>
-                  <button className="hover:text-[#030812]">Hats</button>
-                  <button className="hover:text-[#030812]">Sandal</button>
-                  <button className="hover:text-[#030812]">Belt</button>
-                  <button className="hover:text-[#030812]">Bags</button>
-                  <button className="hover:text-[#030812]">Sunglasses</button>
-                  <button className="hover:text-[#030812]">Beachwear</button>
-                  <button className="hover:text-[#030812]">Snacker</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Filters sizes={sizes} colors={colors}/>
 
           {/* Content */}
           <div className="w-full h-full ">

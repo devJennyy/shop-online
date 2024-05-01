@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { FaTicketSimple } from "react-icons/fa6";
 import { LuMinus, LuPlus } from "react-icons/lu";
 
 const ProductPage = () => {
@@ -45,7 +46,7 @@ const ProductPage = () => {
               </p>
             </div>
             <div className="flex flex-col justify-start items-start mt-8 gap-2">
-              <p className="text-[12px] font-normal">
+              <p className="text-[12px] text-[#666666] font-normal">
                 Only <span className="font-bold">9</span> item(s) left in stock!
               </p>
 
@@ -55,6 +56,14 @@ const ProductPage = () => {
             </div>
 
             <div className="flex flex-col gap-6 mt-8">
+            <div className="flex flex-col gap-2">
+                <p className="text-[16px] font-medium">Vouchers</p>
+
+                <div className="flex flex-row gap-3 text-[14px]">
+                <FaTicketSimple size={30}/>
+                </div>
+              </div>
+
               <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Size</p>
 
