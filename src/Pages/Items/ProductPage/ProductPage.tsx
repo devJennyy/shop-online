@@ -40,7 +40,7 @@ const ProductPage = () => {
           {/* Content */}
           <div className=" flex flex-col w-1/2 h-full pl-10">
             <p className="uppercase text-[14px] text-[#666666]">Shop Name</p>
-            <p className="text-[30px] font-semibold">Boxy Denim Hat</p>
+            <p className="text-[30px] font-semibold">Summer Hat</p>
 
             <div className="flex flex-row items-center gap-3 my-4">
               <p className="text-[24px] font-bold">$39.00</p>

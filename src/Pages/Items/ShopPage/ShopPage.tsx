@@ -59,14 +59,14 @@ const ShopPage = () => {
       sold: false,
     },
     {
-      image: "/images/shop-item/item-three.png",
+      image: "/images/shop-item/sunglasses/sunglass-cover.png",
       itemName: "Vintage Sunglasses",
       price: 10.15,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
       sold: true,
     },
     {
-      image: "/images/shop-item/item-three.jpg",
+      image: "/images/shop-item/blazer/blazer-cover.jpg",
       itemName: "Fashion Blazer & Pants",
       price: 10.15,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
