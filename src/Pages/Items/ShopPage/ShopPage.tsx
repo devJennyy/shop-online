@@ -52,68 +52,55 @@ const ShopPage = () => {
   ];
   const shopItem:IShopItems[] = [
     {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
+      image: "/images/shop-item/hats/hat-cover.jpg",
+      itemName: "Summer Hat",
       price: 25.00,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#FFD1DC]"],
       sold: false,
     },
     {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
+      image: "/images/shop-item/item-three.png",
+      itemName: "Vintage Sunglasses",
+      price: 10.15,
+      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
+      sold: true,
+    },
+    {
+      image: "/images/shop-item/item-three.jpg",
+      itemName: "Fashion Blazer & Pants",
+      price: 10.15,
+      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
+      sold: true,
+    },
+    {
+      image: "/images/shop-item/item-nine.jpg",
+      itemName: "Men's Short Sleeve T-Shirt",
       price: 25.00,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
       sold: true,
     },
     {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
+      image: "/images/shop-item/item-seven.png",
+      itemName: "Wedding Dress",
       price: 25.00,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
       sold: false,
     },
     {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
-      price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
-      sold: false,
-    },
-    {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
-      price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
-      sold: false,
-    },
-    {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
-      price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
-      sold: false,
-    },
-    {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
+      image: "/images/shop-item/item-four.jpg",
+      itemName: "Men's Suit",
       price: 25.00,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
       sold: true,
     },
     {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
+      image: "/images/shop-item/sandals/sandal-cover.jpg",
+      itemName: "Sandals with Heels",
       price: 25.00,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
       sold: true,
     },
-    {
-      image: "/images/shop-item/item-one.png",
-      itemName: "Boxy Denim Hat",
-      price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]"],
-      sold: true,
-    },
+
   ];
 
   return (
