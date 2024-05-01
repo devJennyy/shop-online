@@ -22,7 +22,7 @@ const ProductPage = () => {
             </div>
 
             <img
-              src="/images/shop-item/item-onee.png"
+              src="/images/shop-item/item-one.png"
               className="w-full h-full object-cover"
             />
           </div>

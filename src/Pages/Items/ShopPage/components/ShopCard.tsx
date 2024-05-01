@@ -1,18 +1,19 @@
 interface Props {
   image: string;
   itemName: string;
-  itemPrice: string;
+  itemPrice: number;
+  colors: string[];
   sold: boolean;
 }
 
-const ShopCard = ({ image, itemName, itemPrice, sold }: Props) => {
+const ShopCard = ({ image, itemName, itemPrice, sold, colors }: Props) => {
   return (
     <button className="flex w-[285px] h-[400px] border border-[#E0E0E0] rounded-md">
       <div className="flex flex-col justify-center items-center p-4 w-full">
         <div className="flex justify-center items-center w-full h-[260px]">
           <img
             src={image}
-            className="flex justify-center items-center object-cover w-full h-full"
+            className="flex justify-center items-center object-cover object-top w-full h-full"
           />
 
           {sold && (<div className="flex flex-col justify-center items-center w-14 h-14 rounded-full bg-[#B1B1B1]/70 absolute">
@@ -27,12 +28,15 @@ const ShopCard = ({ image, itemName, itemPrice, sold }: Props) => {
           <div className=" flex flex-col text-start gap-1">
             <p className="font-medium">{itemName}</p>
 
-            <p className="text-[14px]">{itemPrice}</p>
+            <p className="text-[14px]">${itemPrice.toFixed(2)}</p>
           </div>
 
           <div className="flex flex-row justify-center items-center gap-3 mt-4">
-            <div className="w-4 h-4 bg-[#B1C5D4] rounded-full outline outline-1 outline-offset-2"></div>
-            <div className="w-5 h-5 bg-[#063E66] rounded-full"></div>
+            {colors?.map((color, index) => {
+              return (
+                <div className={`${color} ${index == 0 ? `w-4 h-4 outline outline-1 outline-offset-2` : `w-5 h-5`} rounded-full`}></div>
+              );
+            })}
           </div>
         </div>
       </div>
