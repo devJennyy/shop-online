@@ -55,7 +55,7 @@ const ShopPage = () => {
       image: "/images/shop-item/hats/hat-cover.jpg",
       itemName: "Summer Hat",
       price: 25.00,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#FFD1DC]"],
+      colors: ["bg-[#000000]", "bg-[#EBE6DB]"],
       sold: false,
     },
     {

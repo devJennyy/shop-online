@@ -15,16 +15,26 @@ const ProductPage = () => {
           {/* Picture */}
           <div className="flex flex-row w-fit h-[600px] gap-4">
             <div className="flex flex-col justify-between w-full h-full gap-4">
-              <div className="w-28 h-full bg-slate-600"></div>
-              <div className="w-28 h-full bg-slate-600"></div>
-              <div className="w-28 h-full bg-slate-600"></div>
-              <div className="w-28 h-full bg-slate-600"></div>
+              <div className="max-w-28 h-full">
+                <img src="/images/shop-item/hats/hat-black.jpg" className="w-full h-full object-cover"/>
+              </div>
+              <div className="max-w-28 h-full">
+                <img src="/images/shop-item/hats/hat-black-two.jpg" className="w-full h-full object-cover"/>
+              </div>
+              <div className="max-w-28 h-full">
+                <img src="/images/shop-item/hats/hat-white.jfif" className="w-full h-full object-cover"/>
+              </div>
+              <div className="max-w-28 h-full">
+                <img src="/images/shop-item/hats/hat-white-two.jfif" className="w-full h-full object-cover"/>
+              </div>
             </div>
 
-            <img
-              src="/images/shop-item/item-one.png"
-              className="w-full h-full object-cover"
-            />
+            <div className="min-w-[500px] h-full">
+              <img
+                src="/images/shop-item/hats/hat-black.jpg"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Content */}
@@ -56,11 +66,11 @@ const ProductPage = () => {
             </div>
 
             <div className="flex flex-col gap-6 mt-8">
-            <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Vouchers</p>
 
                 <div className="flex flex-row gap-3 text-[14px]">
-                <FaTicketSimple size={30}/>
+                  <FaTicketSimple size={30} />
                 </div>
               </div>
 
@@ -86,8 +96,8 @@ const ProductPage = () => {
               <div className="flex flex-col gap-2">
                 <p className="text-[16px] font-medium">Color</p>
                 <div className="flex flex-row justify-start items-center gap-3">
-                  <div className="w-4 h-4 bg-[#B1C5D4] rounded-full outline outline-1 outline-offset-2"></div>
-                  <div className="w-5 h-5 bg-[#063E66] rounded-full"></div>
+                  <div className="w-4 h-4 bg-[#000000] rounded-full outline outline-1 outline-offset-2"></div>
+                  <div className="w-5 h-5 bg-[#EBE6DB] rounded-full"></div>
                 </div>
               </div>
 
