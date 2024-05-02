@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaTicketSimple } from "react-icons/fa6";
 import { LuMinus, LuPlus } from "react-icons/lu";
+import Countdown from 'react-countdown';
 
 interface Props {
   selectedMedia: string;
@@ -69,10 +70,12 @@ const ProductOverview = ({
           </div>
         </div>
 
-        <div className="flex justify-start items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#F8CCCC] rounded-sm">
-          <p className="text-[#FF706B] text-[14px] font-medium ml-3">
+        <div className="flex justify-between items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#F8CCCC] rounded-sm text-[#FF706B] text-[14px] font-medium px-4">
+          <p>
             Hurry up! Sale ends in:
           </p>
+
+          <Countdown className="tracking-[7px]" date={Date.now() + 18000000} />
         </div>
         <div className="flex flex-col justify-start items-start mt-8 gap-2">
           <p className="text-[12px] text-[#666666] font-normal">
