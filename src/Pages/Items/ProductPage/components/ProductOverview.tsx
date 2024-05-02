@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaTicketSimple } from "react-icons/fa6";
 import { LuMinus, LuPlus } from "react-icons/lu";
 
@@ -26,6 +27,8 @@ const ProductOverview = ({
   size,
   colors,
 } : Props) => {
+
+  const [count, setCount] = useState(0);
   return (
     <div className="flex flex-row justify-between w-full h-fit">
       {/* Picture */}
@@ -130,15 +133,15 @@ const ProductOverview = ({
             <p className="text-[16px] font-medium">Quantity</p>
             <div className="flex flex-row justify-start gap-5">
               <div className="flex flex-row">
-                <div className="flex justify-center items-center w-16 h-11 border rounded-tl-md rounded-bl-md">
+                <button onClick={() => setCount(prevCount => prevCount - 1)} className="flex justify-center items-center w-16 h-11 border rounded-tl-md rounded-bl-md">
                   <LuMinus size={14} />
-                </div>
+                </button>
                 <p className="flex justify-center items-center border-t border-b w-16 h-11">
-                  1
+                  {count}
                 </p>
-                <div className="flex justify-center items-center w-16 h-11 border rounded-tr-md rounded-br-md">
+                <button onClick={() => setCount(prevCount => prevCount + 1)} className="flex justify-center items-center w-16 h-11 border rounded-tr-md rounded-br-md">
                   <LuPlus size={14} />
-                </div>
+                </button>
               </div>
 
               <div className="flex justify-center items-center w-full h-11 bg-black rounded-md">
