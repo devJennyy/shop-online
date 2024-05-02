@@ -11,6 +11,7 @@ const ProductPage = () => {
         "/images/shop-item/hats/hat-white.png",
         "/images/shop-item/hats/hat-black.png",
         "/images/shop-item/hats/summer-hat.png",
+        "/images/shop-item/hats/hat.png",
       ],
       selectedMedia: "/images/shop-item/hats/hat-khaki.png",
       shopName: "Shop Name",

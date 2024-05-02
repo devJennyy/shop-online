@@ -29,26 +29,26 @@ const ProductOverview = ({
   return (
     <div className="flex flex-row justify-between w-full h-fit">
       {/* Picture */}
-      <div className="flex flex-row w-fit h-[600px] gap-4">
-        <div className="flex flex-col justify-between w-28 h-full gap-4">
+      <div className="flex flex-row w-fit h-[600px] gap-5">
+        <div className="flex flex-col justify-between w-20 h-full gap-4">
           {selectionMedia?.map((selection, index) => {
             return (
               <img src={selection} className={`${selection} ${
                 index == 0 
                 ? `outline outline-2 outline-offset-4`
                 : ``
-              } w-full h-full object-cover mt-[6px]`} />
+              } w-full h-full object-center mt-[6px]`} />
             );
           })}
         </div>
 
-        <div className="min-w-[500px] h-full">
+        <div className="w-[500px] h-full">
           <img src={selectedMedia} className="w-full h-full object-cover" />
         </div>
       </div>
 
       {/* Content */}
-      <div className=" flex flex-col w-1/2 h-full pl-10">
+      <div className=" flex flex-col w-1/2 h-full ml-14">
         <p className="uppercase text-[14px] text-[#666666]">{shopName}</p>
         <p className="text-[30px] font-semibold">{productName}</p>
 
