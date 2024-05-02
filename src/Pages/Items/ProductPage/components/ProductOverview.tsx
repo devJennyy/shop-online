@@ -37,7 +37,7 @@ const ProductOverview = ({
                 index == 0 
                 ? `outline outline-2 outline-offset-4`
                 : ``
-              } w-full h-full object-center mt-[6px]`} />
+              } w-full h-full object-cover mt-[6px]`} />
             );
           })}
         </div>
@@ -95,9 +95,13 @@ const ProductOverview = ({
             <p className="text-[16px] font-medium">Size</p>
 
             <div className="flex flex-row gap-3 text-[14px]">
-              {size?.map((sizes) => {
+              {size?.map((sizes, index) => {
                 return (
-                  <button className="flex justify-center items-center border w-11 h-11 rounded-md bg-[#030812] text-white">
+                  <button className={`${sizes} ${
+                    index == 0
+                      ? `w-11 h-11 bg-[#030812] text-white`
+                      : `w-11 h-11 border`
+                  } flex justify-center items-center rounded-md`}>
                     {sizes}
                   </button>
                 );
