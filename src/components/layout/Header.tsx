@@ -125,7 +125,7 @@ const Header = ({ hasNavbar }: Props) => {
                       <div className="flex flex-col justify-center items-center py-4">
                         <div className="w-48 h-48">
                           <img
-                            src="/images/cart.png"
+                            src="/icons/cart.png"
                             className="w-fit h-fit object-cover ml-[10px] gap-5 mt-3"
                           />
                         </div>
@@ -153,7 +153,7 @@ const Header = ({ hasNavbar }: Props) => {
                     <div className="flex flex-col justify-center items-center py-2 gap-5">
                       <div className="w-48 h-48">
                         <img
-                          src="/images/favourite.svg"
+                          src="/icons/favourite.svg"
                           className="w-fit h-fit object-cover"
                         />
                       </div>

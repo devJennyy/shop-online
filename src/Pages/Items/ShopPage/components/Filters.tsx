@@ -33,7 +33,7 @@ const Filters = ({ sizes, colors, prices, collections, tags }: Props) => {
 
           <div className="grid grid-cols-6 gap-2 w-52">
             {colors?.map((color) => {
-              return <div className={`w-7 h-7 rounded-full ${color}`}></div>;
+              return <div className={`w-7 h-7 rounded-full cursor-pointer ${color}`}></div>;
             })}
           </div>
         </div>

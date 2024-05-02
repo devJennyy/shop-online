@@ -84,62 +84,62 @@ const Homepage = () => {
           <div className="flex flex-col gap-16">
             <div className="flex flex-row justify-between w-full no-scrollbar">
               <Categories
-                categoryImage="/images/womens-apparel.png"
+                categoryImage="/images/categories/womens-apparel.png"
                 categoryName="Women's Apparels"
               />
               <Categories
-                categoryImage="/images/womens-shoes.png"
+                categoryImage="/images/categories/womens-shoes.png"
                 categoryName="Women's Shoes"
               />
               <Categories
-                categoryImage="/images/cosmetics.png"
+                categoryImage="/images/categories/cosmetics.png"
                 categoryName="Cosmetics"
               />
               <Categories
-                categoryImage="/images/home-decor.png"
+                categoryImage="/images/categories/home-decor.png"
                 categoryName="Home Decor"
               />
               <Categories
-                categoryImage="/images/appliances.png"
+                categoryImage="/images/categories/appliances.png"
                 categoryName="Appliances"
               />
               <Categories
-                categoryImage="/images/womens-accessories.png"
+                categoryImage="/images/categories/womens-accessories.png"
                 categoryName="Women's Accessories"
               />
               <Categories
-                categoryImage="/images/bags.png"
+                categoryImage="/images/categories/bags.png"
                 categoryName="Bags"
               />
             </div>
 
             <div className="flex flex-row justify-between w-full no-scrollbar">
               <Categories
-                categoryImage="/images/mens-apparel.png"
+                categoryImage="/images/categories/mens-apparel.png"
                 categoryName="Men's Apparel"
               />
               <Categories
-                categoryImage="/images/men-shoes.png"
+                categoryImage="/images/categories/men-shoes.png"
                 categoryName="Men's Shoes"
               />
               <Categories
-                categoryImage="/images/gadgets.png"
+                categoryImage="/images/categories/gadgets.png"
                 categoryName="Gadgets"
               />
               <Categories
-                categoryImage="/images/motors.png"
+                categoryImage="/images/categories/motors.png"
                 categoryName="Motors"
               />
               <Categories
-                categoryImage="/images/home&living.png"
+                categoryImage="/images/categories/home&living.png"
                 categoryName="Home & Living"
               />
               <Categories
-                categoryImage="/images/mens-accessories.png"
+                categoryImage="/images/categories/mens-accessories.png"
                 categoryName="Men's Accessories"
               />
               <Categories
-                categoryImage="/images/mobiles-accessories.png"
+                categoryImage="/images/categories/mobiles-accessories.png"
                 categoryName="Mobiles Accessories"
               />
             </div>
@@ -163,19 +163,19 @@ const Homepage = () => {
           <div className="flex flex-row justify-between items-center w-full h-56 gap-4">
             <div className="w-full h-full bg-[#EDEDED] rounded-md">
               <img
-                src="/images/flashdeals.png"
+                src="/images/flashdeals/flashdeals.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
             <div className="w-full h-full bg-[#EDEDED] rounded-md">
               <img
-                src="/images/flashdeals-two.png"
+                src="/images/flashdeals/flashdeals-two.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
             <div className="w-full h-full bg-[#EDEDED] rounded-md">
               <img
-                src="/images/flashdeals-three.png"
+                src="/images/flashdeals/flashdeals-three.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>

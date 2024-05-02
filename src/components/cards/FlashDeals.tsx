@@ -11,13 +11,13 @@ const FlashDeals = () => {
       <div className="flex flex-col gap-2 h-full">
         <button className="w-[390px] h-1/2 bg-[#E3E3E3] rounded-md">
           <img
-            src="/images/small-banner.png"
+            src="/images/banner/small-banner.png"
             className="object-cover rounded-md h-full w-full "
           />
         </button>
         <button className="w-[390px] h-1/2 bg-[#E3E3E3] rounded-md">
           <img
-            src="/images/small-banner-two.png"
+            src="/images/banner/small-banner-two.png"
             className="object-cover rounded-md h-full w-full "
           />
         </button>
@@ -31,19 +31,19 @@ const FlashDeals = () => {
         <div className="embla__container h-full">
           <div className="embla__slide flex justify-center items-center">
             <img
-              src="/images/banner.png"
+              src="/images/banner/banner.png"
               className="object-cover w-full h-full rounded-md"
             />
           </div>
           <div className="embla__slide flex justify-center items-center">
             <img
-              src="/images/banner.png"
+              src="/images/banner/banner.png"
               className="object-cover w-full h-full rounded-md"
             />
           </div>
           <div className="embla__slide flex justify-center items-center">
             <img
-              src="/images/banner.png"
+              src="/images/banner/banner.png"
               className="object-cover w-full h-full rounded-md"
             />
           </div>

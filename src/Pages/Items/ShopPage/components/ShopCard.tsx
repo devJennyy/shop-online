@@ -44,7 +44,7 @@ const ShopCard = ({ image, itemName, itemPrice, sold, colors }: Props) => {
                     index == 0
                       ? `w-4 h-4 outline outline-1 outline-offset-2 mr-[2px]`
                       : `w-5 h-5 outline outline-1 outline-[#E6E6E6]`
-                  } rounded-full`}
+                  } rounded-full cursor-pointer`}
                 ></div>
               );
             })}

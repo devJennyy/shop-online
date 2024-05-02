@@ -5,7 +5,7 @@ const Discovery = () => {
     <button className="flex w-56 h-80 border border-[#E0E0E0] rounded-md">
       <div className="flex flex-col justify-center items-center p-4 w-full gap-6 mt-2">
           <img
-            src="/images/mens-apparel.png"
+            src="/images/categories/mens-apparel.png"
             className="flex justify-center items-center object-scale-down w-fit h-fit"
           />
           
