@@ -5,12 +5,14 @@ interface Props {
   collections?: string[];
   tags?: string[];
 }
-const Filters = ( {sizes, colors, prices, collections, tags} : Props) => {
+const Filters = ({ sizes, colors, prices, collections, tags }: Props) => {
   return (
     <div className="w-[380px] h-full">
+      {/* Filters */}
       <p className="text-[18px] font-semibold">Filters</p>
 
       <div className="flex flex-col text-start gap-10 mt-5">
+        {/* Size */}
         <div className="flex flex-col gap-4">
           <p className="text-[16px] font-medium">Size</p>
 
@@ -25,30 +27,29 @@ const Filters = ( {sizes, colors, prices, collections, tags} : Props) => {
           </div>
         </div>
 
+        {/* Colors */}
         <div className="flex flex-col gap-4">
           <p className="text-[16px] font-medium">Colors</p>
 
           <div className="grid grid-cols-6 gap-2 w-52">
             {colors?.map((color) => {
-              return (
-                <div className={`w-7 h-7 rounded-full ${color}`}></div>
-              );
+              return <div className={`w-7 h-7 rounded-full ${color}`}></div>;
             })}
           </div>
         </div>
 
+        {/* Prices */}
         <div className="flex flex-col gap-4">
           <p className="text-[16px] font-medium">Prices</p>
 
           <div className="flex flex-col items-start gap-3 text-[#666666] text-[14px]">
             {prices?.map((price) => {
-              return (
-                <button className="hover:text-[#030812]">{price}</button>
-              );
+              return <button className="hover:text-[#030812]">{price}</button>;
             })}
           </div>
         </div>
 
+        {/* Collections */}
         <div className="flex flex-col gap-4">
           <p className="text-[16px] font-medium">Collections</p>
 
@@ -61,14 +62,13 @@ const Filters = ( {sizes, colors, prices, collections, tags} : Props) => {
           </div>
         </div>
 
+        {/* Tags */}
         <div className="flex flex-col gap-4">
           <p className="text-[16px] font-medium">Tags</p>
 
           <div className="flex flex-row items-start flex-wrap w-52 gap-3 text-[#666666] text-[14px]">
             {tags?.map((tag) => {
-              return (
-                <p>{tag}</p>
-              );
+              return <p>{tag}</p>;
             })}
           </div>
         </div>

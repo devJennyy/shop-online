@@ -1,18 +1,10 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import ShopCard from "./components/ShopCard";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
 import { Link } from "react-router-dom";
 import Filters from "./components/Filters";
 import { IShopItems } from "@/interface/ShopPage/ShopItems";
+import Pagination from "./components/Pagination";
 
 const ShopPage = () => {
   const sizes = ["S", "M", "L", "XL"];
@@ -50,11 +42,11 @@ const ShopPage = () => {
     "Denim",
     "Beachwear",
   ];
-  const shopItem:IShopItems[] = [
+  const shopItem: IShopItems[] = [
     {
       image: "/images/shop-item/hats/hat-cover.jpg",
       itemName: "Summer Hat",
-      price: 25.00,
+      price: 25.0,
       colors: ["bg-[#000000]", "bg-[#EBE6DB]"],
       sold: false,
     },
@@ -75,25 +67,24 @@ const ShopPage = () => {
     {
       image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
       itemName: "Topstitched Sweatshirt",
-      price: 25.00,
+      price: 25.0,
       colors: ["bg-[#EBE6DB]"],
       sold: true,
     },
     {
       image: "/images/shop-item/sandals/sandal-cover.jpg",
       itemName: "Sandals with Heels",
-      price: 25.00,
+      price: 25.0,
       colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#EBE6DB]"],
       sold: true,
     },
     {
       image: "/images/shop-item/men-suit/suit-cover.jpg",
       itemName: "Men's Suit",
-      price: 25.00,
+      price: 25.0,
       colors: ["bg-[#A6A299]", "bg-[#825E3E]", "bg-[#8DB4D2]"],
       sold: true,
     },
-
   ];
 
   return (
@@ -117,91 +108,24 @@ const ShopPage = () => {
           <div className="w-full h-full ">
             <p className="text-[18px] font-semibold">Best Selling</p>
 
-            <div className="flex flex-col">
-              <div className="grid grid-cols-3 mt-5 gap-4">
-                {shopItem?.map((item) => {
-                  return (
-                    <Link to={"/product-page"}>
-                      <ShopCard
-                        image={item.image}
-                        itemName={item.itemName}
-                        itemPrice={item.price}
-                        colors={item.colors}
-                        sold={item.sold}
-                      />
-                    </Link>
-                  );
-                })}
-              </div>
-
-              {/* <div className="flex flex-row mt-5 gap-4">
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice={25.00}
-                  sold={false}
-                />
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice={25.00}
-                  sold={false}
-                />
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice={25.00}
-                  sold={false}
-                />
-              </div>
-
-              <div className="flex flex-row mt-5 gap-4">
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice="$25.00"
-                  sold={true}
-                />
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice="$25.00"
-                  sold={true}
-                />
-                <ShopCard
-                  image="/images/shop-item/item-one.png"
-                  itemName="Boxy Denim Hat"
-                  itemPrice="$25.00"
-                  sold={true}
-                />
-              </div> */}
+            <div className="grid grid-cols-3 mt-5 gap-4">
+              {shopItem?.map((item) => {
+                return (
+                  <Link to={"/product-page"}>
+                    <ShopCard
+                      image={item.image}
+                      itemName={item.itemName}
+                      itemPrice={item.price}
+                      colors={item.colors}
+                      sold={item.sold}
+                    />
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Pagination */}
-            <Pagination className="flex mt-20">
-              <PaginationContent>
-                <PaginationItem>
-                  <PaginationPrevious href="#" />
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#">1</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#" isActive>
-                    2
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#">3</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationEllipsis />
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationNext href="#" />
-                </PaginationItem>
-              </PaginationContent>
-            </Pagination>
+            <Pagination />
           </div>
         </div>
 
