@@ -44,10 +44,10 @@ const ShopPage = () => {
   ];
   const shopItem: IShopItems[] = [
     {
-      image: "/images/shop-item/hats/hat-cover.jpg",
+      image: "/images/shop-item/hats/hat-khaki.png",
       itemName: "Summer Hat",
       price: 25.0,
-      colors: ["bg-[#000000]", "bg-[#EBE6DB]"],
+      colors: ["bg-[#EBE6DB]", "bg-[#FFFFFF]", "bg-[#000000]"],
       sold: false,
     },
     {

@@ -20,7 +20,7 @@ const ProductPage = () => {
       discountPercentage: 33,
       itemLeft: 9,
       size: ["S", "M", "L", "XL"],
-      colors: ["bg-[#EBE6DB]", "bg-[#000000]", "bg-[#FFFFFF] outline outline-[1px] outline-[#E6E6E6]"],
+      colors: ["bg-[#EBE6DB]", "bg-[#FFFFFF]", "bg-[#000000]"],
     },
   ];
   return (

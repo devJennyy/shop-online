@@ -42,8 +42,8 @@ const ShopCard = ({ image, itemName, itemPrice, sold, colors }: Props) => {
                 <div
                   className={`${color} ${
                     index == 0
-                      ? `w-4 h-4 outline outline-1 outline-offset-2`
-                      : `w-5 h-5`
+                      ? `w-4 h-4 outline outline-1 outline-offset-2 mr-[2px]`
+                      : `w-5 h-5 outline outline-1 outline-[#E6E6E6]`
                   } rounded-full`}
                 ></div>
               );
