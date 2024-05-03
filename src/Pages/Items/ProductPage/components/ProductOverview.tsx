@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
 import { IoMdHeart } from "react-icons/io";
+import ShopCard from "../../ShopPage/components/ShopCard";
+import { IShopItems } from "@/interface/ShopPage/ShopItems";
 
 interface Props {
   selectedMedia: string;
@@ -33,6 +35,36 @@ const ProductOverview = ({
   colors,
 }: Props) => {
   const [count, setCount] = useState(1);
+  const shopItem: IShopItems[] = [
+    {
+      image: "/images/shop-item/sunglasses/sunglass-cover.png",
+      itemName: "Vintage Sunglasses",
+      price: 10.15,
+      colors: ["bg-[#000000]", "bg-[#836953]", "bg-[#FFD1DC]", "bg-[#C6AEC7]"],
+      sold: true,
+    },
+    {
+      image: "/images/shop-item/blazer/blazer-cover.jpg",
+      itemName: "Fashion Blazer & Pants",
+      price: 10.15,
+      colors: ["bg-red-600", "bg-[#000000]"],
+      sold: false,
+    },
+    {
+      image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
+      itemName: "Topstitched Sweatshirt",
+      price: 25.0,
+      colors: ["bg-[#EBE6DB]"],
+      sold: true,
+    },
+    {
+      image: "/images/shop-item/sandals/sandal-cover.jpg",
+      itemName: "Sandals with Heels",
+      price: 25.0,
+      colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#EBE6DB]"],
+      sold: true,
+    },
+  ];
   return (
     <div className="flex flex-col w-full h-fit gap-20">
       {/* Product Preview */}
@@ -242,7 +274,21 @@ const ProductOverview = ({
       <div className="flex flex-col">
         <p className="text-[30px] font-semibold">Related Products</p>
         
-        <div></div>
+        <div className="grid grid-cols-4 mt-10 gap-4">
+              {shopItem?.map((item) => {
+                return (
+                  <Link to={"/product-page"}>
+                    <ShopCard
+                      image={item.image}
+                      itemName={item.itemName}
+                      itemPrice={item.price}
+                      colors={item.colors}
+                      sold={item.sold}
+                    />
+                  </Link>
+                );
+              })}
+            </div>
       </div>
     </div>
   );
