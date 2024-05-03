@@ -19,7 +19,7 @@ const Signup = () => {
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
-                    src="/images/image-three.jpg"
+                    src="/images/plusone/image-three.jpg"
                     className="object-cover w-60 h-60 rounded-[50px] "
                   />
                 </CardItem>
@@ -28,7 +28,7 @@ const Signup = () => {
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
-                    src="/images/image-two.jpg"
+                    src="/images/plusone/image-two.jpg"
                     className="object-cover object-center w-60 h-72 rounded-[50px] ml-10"
                   />
                 </CardItem>
@@ -39,7 +39,7 @@ const Signup = () => {
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
-                    src="/images/image-one.gif"
+                    src="/images/plusone/image-one.gif"
                     className="object-cover w-60 h-72 rounded-[50px]"
                   />
                 </CardItem>
@@ -48,7 +48,7 @@ const Signup = () => {
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
                   <img
-                    src="/images/image-four.jpg"
+                    src="/images/plusone/image-four.jpg"
                     className="object-cover w-60 h-60 rounded-[50px] ml-10"
                   />
                 </CardItem>

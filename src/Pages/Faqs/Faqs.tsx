@@ -5,7 +5,7 @@ import Header from "../../components/layout/Header";
 const Faqs = () => {
   return (
     <div className="w-full">
-      <Header hasNavbar={false}/>
+      <Header hasNavbar={false} />
 
       <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-32 gap-20">
         {/* FAQs */}
@@ -45,7 +45,9 @@ const Faqs = () => {
         </div>
 
         {/* Footer */}
-        <Footer hasBorder={true}/>
+        <div className="w-full">
+          <Footer hasMiniHighlights={false} hasBorder={true} />
+        </div>
       </div>
     </div>
   );

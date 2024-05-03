@@ -1,7 +1,9 @@
 interface Props {
+  hasMiniHighlights: boolean;
   hasBorder: boolean;
 }
 
+import { BiLogoTelegram, BiSolidTruck } from "react-icons/bi";
 import {
   FaTwitter,
   FaFacebookF,
@@ -11,13 +13,40 @@ import {
   FaApple,
   FaGooglePlay,
 } from "react-icons/fa";
+import { MdOutlineCurrencyExchange, MdPayment } from "react-icons/md";
 
-const Footer = ( {hasBorder} : Props) => {
+const Footer = ({ hasBorder, hasMiniHighlights }: Props) => {
   return (
-    <div className="flex flex-col gap-20 w-full">
-      {hasBorder && (<div className="w-full border-b border-[#EDEDED] mt-28"></div>)}
-      
+    <div className="flex flex-col">
+      {/* Mini Highlights */}
+      {hasMiniHighlights && (
+        <div className="w-full h-32 border border-[#E1E3E5] rounded-md my-28 cursor-pointer">
+          <div className="flex flex-row justify-between items-center w-full h-full px-16 text-[14px]">
+            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
+              <BiLogoTelegram size={26} />
+              <p>Free Shipping</p>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
+              <MdOutlineCurrencyExchange size={26} />
+              <p>Guaranteed Refund</p>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
+              <BiSolidTruck size={26} />
+              <p>Fast Delivery</p>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
+              <MdPayment size={26} />
+              <p>Flexible Payments</p>
+            </div>
+          </div>
+        </div>
+      )}
 
+      <div className="flex flex-col gap-20 w-full">
+      {hasBorder && (
+        <div className="w-full border-b border-[#EDEDED] mt-28"></div>
+      )}
+      
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-col items-center gap-8 w-80">
           <button>
@@ -110,6 +139,7 @@ const Footer = ( {hasBorder} : Props) => {
           <p>2024</p>
         </div>
       </button>
+      </div>
     </div>
   );
 };

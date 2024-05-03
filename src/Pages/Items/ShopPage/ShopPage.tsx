@@ -92,7 +92,7 @@ const ShopPage = () => {
       {/* Header */}
       <Header hasNavbar={true} />
 
-      <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12 gap-20">
+      <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12">
         {/* Container */}
         <div className="flex flex-row justify-between w-full h-fit">
           {/* Filters */}
@@ -130,7 +130,7 @@ const ShopPage = () => {
         </div>
 
         {/* Footer */}
-        <Footer hasBorder={true} />
+        <Footer hasMiniHighlights={true} hasBorder={false} />
       </div>
     </div>
   );

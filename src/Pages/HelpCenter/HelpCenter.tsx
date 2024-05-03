@@ -72,7 +72,9 @@ const HelpCenter = () => {
         </div>
 
         {/* Footer */}
-        <Footer hasBorder={true}/>
+        <div className="w-full">
+          <Footer hasMiniHighlights={false} hasBorder={true} />
+        </div>
       </div>
     </div>
   );

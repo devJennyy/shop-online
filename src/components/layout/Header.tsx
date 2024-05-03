@@ -55,6 +55,7 @@ const Header = ({ hasNavbar }: Props) => {
             </div>
           )}
 
+          {/* Language */}
           <div className="flex flex-row justify-end items-center gap-6 text-[14px] font-light w-full">
             <Select>
               <SelectTrigger className="flex flex-row justify-center items-center gap-2 outline-none">
@@ -71,6 +72,7 @@ const Header = ({ hasNavbar }: Props) => {
               </SelectContent>
             </Select>
 
+            {/* Faqs */}
             <Link
               to={"/faqs"}
               className="flex flex-row justify-center items-center gap-2"
@@ -79,6 +81,7 @@ const Header = ({ hasNavbar }: Props) => {
               <p>Faqs</p>
             </Link>
 
+            {/* Help Center */}
             <Link
               to={"/help-center"}
               className="flex flex-row justify-center items-center gap-2"
@@ -99,6 +102,7 @@ const Header = ({ hasNavbar }: Props) => {
                 <img src="/icons/logo.svg" className="w-full" />
               </a>
 
+              {/* Search Item */}
               <div className="flex flex-row justify-end items-center w-[400px] h-11 relative">
                 <input
                   placeholder="Sign up and get 100% off your first order"
@@ -110,35 +114,37 @@ const Header = ({ hasNavbar }: Props) => {
                 />
               </div>
 
+              {/* Cart */}
               <div className="flex flex-row justify-center items-center gap-2">
-                  <HoverCard openDelay={20} closeDelay={10}>
-                    <HoverCardTrigger asChild>
-                      <Button
-                        variant="link"
-                        className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
-                      >
-                        <img src="/icons/cart.svg" />
-                      </Button>
-                    </HoverCardTrigger>
+                <HoverCard openDelay={20} closeDelay={10}>
+                  <HoverCardTrigger asChild>
+                    <Button
+                      variant="link"
+                      className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
+                    >
+                      <img src="/icons/cart.svg" />
+                    </Button>
+                  </HoverCardTrigger>
 
-                    <HoverCardContent className="w-80 h-80">
-                      <div className="flex flex-col justify-center items-center py-4">
-                        <div className="w-48 h-48">
-                          <img
-                            src="/icons/cart.png"
-                            className="w-fit h-fit object-cover ml-[10px] gap-5 mt-3"
-                          />
-                        </div>
-                        <div className="flex flex-col justify-center items-center mt-3">
-                          <p className="font-bold">No Orders</p>
-                          <p className="text-[13px] text-[#757575]">
-                            You haven't made any orders yet.
-                          </p>
-                        </div>
+                  <HoverCardContent className="w-80 h-80">
+                    <div className="flex flex-col justify-center items-center py-4">
+                      <div className="w-48 h-48">
+                        <img
+                          src="/icons/cart.png"
+                          className="w-fit h-fit object-cover ml-[10px] gap-5 mt-3"
+                        />
                       </div>
-                    </HoverCardContent>
-                  </HoverCard>
+                      <div className="flex flex-col justify-center items-center mt-3">
+                        <p className="font-bold">No Orders</p>
+                        <p className="text-[13px] text-[#757575]">
+                          You haven't made any orders yet.
+                        </p>
+                      </div>
+                    </div>
+                  </HoverCardContent>
+                </HoverCard>
 
+                {/* Favourites */}
                 <HoverCard openDelay={20} closeDelay={10}>
                   <HoverCardTrigger asChild>
                     <Button
@@ -167,6 +173,7 @@ const Header = ({ hasNavbar }: Props) => {
                   </HoverCardContent>
                 </HoverCard>
 
+                {/* User Icon */}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md">
@@ -174,8 +181,12 @@ const Header = ({ hasNavbar }: Props) => {
                     </button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-                    <Link to={"/login"}><DropdownMenuItem>Login</DropdownMenuItem></Link>
-                    <Link to={"/signup"}><DropdownMenuItem>Signup</DropdownMenuItem></Link>
+                    <Link to={"/login"}>
+                      <DropdownMenuItem>Login</DropdownMenuItem>
+                    </Link>
+                    <Link to={"/signup"}>
+                      <DropdownMenuItem>Signup</DropdownMenuItem>
+                    </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>

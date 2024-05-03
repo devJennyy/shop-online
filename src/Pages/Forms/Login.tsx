@@ -129,7 +129,7 @@ const Login = () => {
         </div>
 
         {/* Footer */}
-        <Footer hasBorder={true} />
+        <Footer hasMiniHighlights={false} hasBorder={true} />
       </div>
     </div>
   );

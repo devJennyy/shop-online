@@ -1,14 +1,11 @@
 import { CiDiscount1, CiDeliveryTruck } from "react-icons/ci";
 import { GoShieldCheck } from "react-icons/go";
 import {
-  MdOutlineCurrencyExchange,
   MdOutlineSupportAgent,
-  MdPayment,
 } from "react-icons/md";
 import Categories from "../../components/cards/Categories";
 import Discovery from "../../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
-import { BiLogoTelegram, BiSolidTruck } from "react-icons/bi";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -223,30 +220,8 @@ const Homepage = () => {
           </div>
         </div>
 
-        {/* Mini Highlights */}
-        <div className="w-full h-32 border border-[#E1E3E5] rounded-md my-28 cursor-pointer">
-          <div className="flex flex-row justify-between items-center w-full h-full px-16 text-[14px]">
-            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
-              <BiLogoTelegram size={26} />
-              <p>Free Shipping</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
-              <MdOutlineCurrencyExchange size={26} />
-              <p>Guaranteed Refund</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
-              <BiSolidTruck size={26} />
-              <p>Fast Delivery</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 active:scale-95 transition-all cursor-pointer">
-              <MdPayment size={26} />
-              <p>Flexible Payments</p>
-            </div>
-          </div>
-        </div>
-
         {/* Footer */}
-        <Footer hasBorder={false}/>
+        <Footer hasMiniHighlights={true} hasBorder={false}/>
       </div>
     </div>
   );
