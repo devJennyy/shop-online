@@ -11,10 +11,9 @@ const Signup = () => {
     <div className="w-full">
       <Header hasNavbar={false} />
 
-      {/* FAQs */}
-      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-10">
-        <div className="flex flex-row justify-between w-full gap-5">
-          <div className="flex flex-row w-1/2 h-fit">
+      <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-richBlack pt-28 gap-10">
+        <div className="flex justify-between w-full gap-5">
+          <div className="flex w-1/2">
             <div className="flex flex-col gap-10 mt-20">
               <CardContainer className="inter-var">
                 <CardItem translateZ="100">
@@ -56,40 +55,42 @@ const Signup = () => {
             </div>
           </div>
 
-          <div className="w-[500px] h-fit border border-[#E1E3E5] rounded-3xl p-10">
+          <div className="w-[500px] border border-gray-lightGray rounded-3xl p-10">
             <p className="text-[26px] font-semibold">Create an account</p>
-            <p className="text-[14px] text-[#666666]">Lorem Ipsum Dolor.</p>
+            <p className="text-[14px] text-gray-darkGray">Lorem Ipsum Dolor.</p>
 
             <div className="flex flex-col w-full gap-4 mt-10 text-[14px]">
-              <div className="flex flex-row gap-4">
+              <div className="flex gap-4">
                 <div className="flex flex-col w-full gap-1">
-                  <p className="text-[#666666]">First name</p>
-                  <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                  <p className="text-gray-darkGray">First name</p>
+                  <input className="w-full h-11 text-[14px] font-normal border border-gray-lightGray rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
                 </div>
                 <div className="flex flex-col w-full gap-1">
-                  <p className="text-[#666666]">Last name</p>
-                  <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                  <p className="text-gray-darkGray">Last name</p>
+                  <input className="w-full h-11 text-[14px] font-normal border border-gray-lightGray rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
                 </div>
               </div>
 
               <div className="flex flex-col w-full gap-1">
-                <p className="text-[#666666]">Email address or phone number</p>
-                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                <p className="text-gray-darkGray">
+                  Email address or phone number
+                </p>
+                <input className="w-full h-11 text-[14px] font-normal border border-gray-lightGray rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
               </div>
 
               <div className="flex flex-col w-full gap-1">
-                <div className="flex flex-row justify-between text-[#666666]">
+                <div className="flex justify-between text-gray-darkGray">
                   <p>Password</p>
-                  <button className="flex flex-row justify-center items-center gap-2">
-                    <BiSolidHide size={20} className="text-[#666666]/80" />
+                  <button className="flex justify-center items-center gap-2">
+                    <BiSolidHide size={20} className="text-gray-darkGray/80" />
                     <p>Hide</p>
                   </button>
                 </div>
 
-                <input className="w-full h-11 text-[14px] font-normal border border-[#E1E3E5] rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
+                <input className="w-full h-11 text-[14px] font-normal border border-gray-lightGray rounded-xl pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100" />
               </div>
 
-              <button className="flex justify-center items-center w-full h-12 bg-[#030812] rounded-xl mt-4 active:scale-95 transition-all">
+              <button className="flex justify-center items-center w-full h-12 bg-richBlack rounded-xl mt-4 active:scale-95 transition-all">
                 <p className="text-[16px] text-white font-medium">
                   Create account
                 </p>
@@ -98,18 +99,18 @@ const Signup = () => {
               <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full"></div>
 
               <div className="flex flex-col gap-2">
-                <button className="flex flex-row justify-center items-center w-full h-11 border border-[#E1E3E5] rounded-full gap-2">
+                <button className="flex justify-center items-center w-full h-11 border border-gray-lightGray rounded-full gap-2">
                   <FcGoogle size={20} />
                   <p>Continue with Google</p>
                 </button>
-                <button className="flex flex-row justify-center items-center w-full h-11 border border-[#E1E3E5] rounded-full gap-2">
-                  <FaFacebook size={20} className="text-[#0C82EE]" />
+                <button className="flex justify-center items-center w-full h-11 border border-gray-lightGray rounded-full gap-2">
+                  <FaFacebook size={20} className="text-blue-600" />
                   <p>Continue with Facebook</p>
                 </button>
               </div>
 
-              <div className="flex flex-row justify-center items-center gap-2 mt-5">
-                <p className="text-[#666666]">Already have an account?</p>
+              <div className="flex justify-center items-center gap-2 mt-5">
+                <p className="text-gray-darkGray">Already have an account?</p>
                 <Link
                   to={"/login"}
                   className="font-semibold underline underline-offset-2"
@@ -121,8 +122,9 @@ const Signup = () => {
           </div>
         </div>
 
-        {/* Footer */}
-        <Footer hasMiniHighlights={false} hasBorder={true} />
+        <div className="w-full">
+          <Footer hasMiniHighlights={false} hasBorder={true} />
+        </div>
       </div>
     </div>
   );

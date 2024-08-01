@@ -21,15 +21,14 @@ const ProductPage = () => {
       discountPercentage: 33,
       itemLeft: 9,
       size: ["S", "M", "L", "XL"],
-      colors: ["bg-[#EBE6DB]", "bg-[#FFFFFF]", "bg-[#000000]"],
+      colors: ["bg-itemColor-lightBeige", "bg-white", "bg-itemColor-black"],
     },
   ];
   return (
     <div id="shop-page">
-      {/* Header */}
       <Header hasNavbar={true} />
 
-      <div className="flex flex-col w-[1240px] mx-auto h-fit text-[#0B0D21] px-8 pt-12">
+      <div className="flex flex-col w-[1240px] mx-auto text-richBlack px-8 pt-12">
         {productOverview?.map((product) => {
           return (
             <ProductOverview
@@ -47,7 +46,6 @@ const ProductPage = () => {
           );
         })}
 
-        {/* Footer */}
         <Footer hasMiniHighlights={true} hasBorder={false} />
       </div>
     </div>

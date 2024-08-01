@@ -9,18 +9,18 @@ import Pagination from "./components/Pagination";
 const ShopPage = () => {
   const sizes = ["S", "M", "L", "XL"];
   const colors = [
-    "bg-[#000000]",
-    "bg-[#EBE6DB]",
-    "bg-[#B1C5D4]",
-    "bg-[#C6AEC7]",
-    "bg-[#836953]",
-    "bg-[#6CB9FF]",
-    "bg-[#FFD1DC]",
-    "bg-[#C1E1C1]",
-    "bg-[#C6AEC7]",
-    "bg-[#063E66]",
-    "bg-[#FFD700]",
-    "bg-[#FF6C6C]",
+    "bg-itemColor-black",
+    "bg-itemColor-lightBeige",
+    "bg-itemColor-skyBlue",
+    "bg-itemColor-rose",
+    "bg-itemColor-earthBrown",
+    "bg-itemColor-brightBlue",
+    "bg-itemColor-pink",
+    "bg-itemColor-mintGreen",
+    "bg-itemColor-blush",
+    "bg-itemColor-navyBlue",
+    "bg-itemColor-gold",
+    "bg-itemColor-coral",
   ];
   const prices = ["$0-$50", "$50-$100", "$100-$150", "$150-$200", "$300-$400"];
   const collections = [
@@ -47,55 +47,74 @@ const ShopPage = () => {
       image: "/images/shop-item/hats/hat-khaki.png",
       itemName: "Summer Hat",
       price: 25.0,
-      colors: ["bg-[#EBE6DB]", "bg-[#FFFFFF]", "bg-[#000000]"],
-      sold: false,
+      colors: [
+        "bg-itemColor-lightBeige",
+        "bg-itemColor-white",
+        "bg-itemColor-black"
+      ],
+      sold: false
     },
     {
       image: "/images/shop-item/sunglasses/sunglass-cover.png",
       itemName: "Vintage Sunglasses",
       price: 10.15,
-      colors: ["bg-[#000000]", "bg-[#836953]", "bg-[#FFD1DC]", "bg-[#C6AEC7]"],
-      sold: true,
+      colors: [
+        "bg-itemColor-black",
+        "bg-itemColor-earthBrown",
+        "bg-itemColor-pink",
+        "bg-itemColor-rose"
+      ],
+      sold: true
     },
     {
       image: "/images/shop-item/blazer/blazer-cover.jpg",
       itemName: "Fashion Blazer & Pants",
       price: 10.15,
-      colors: ["bg-red-600", "bg-[#000000]"],
-      sold: false,
+      colors: [
+        "bg-red-600",
+        "bg-itemColor-black"
+      ],
+      sold: false
     },
     {
       image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
       itemName: "Topstitched Sweatshirt",
       price: 25.0,
-      colors: ["bg-[#EBE6DB]"],
-      sold: true,
+      colors: [
+        "bg-itemColor-lightBeige"
+      ],
+      sold: true
     },
     {
       image: "/images/shop-item/sandals/sandal-cover.jpg",
       itemName: "Sandals with Heels",
       price: 25.0,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#EBE6DB]"],
-      sold: true,
+      colors: [
+        "bg-itemColor-skyBlue",
+        "bg-itemColor-black",
+        "bg-itemColor-lightBeige"
+      ],
+      sold: true
     },
     {
       image: "/images/shop-item/men-suit/suit-cover.jpg",
       itemName: "Men's Suit",
       price: 25.0,
-      colors: ["bg-[#A6A299]", "bg-[#825E3E]", "bg-[#8DB4D2]"],
-      sold: true,
-    },
+      colors: [
+        "bg-itemColor-lightBeige",
+        "bg-itemColor-earthBrown",
+        "bg-itemColor-skyBlue"
+      ],
+      sold: true
+    }
   ];
 
   return (
     <div id="homepage">
-      {/* Header */}
       <Header hasNavbar={true} />
 
-      <div className="flex flex-col w-[1240px] mx-auto h-full text-[#0B0D21] px-8 pt-12">
-        {/* Container */}
-        <div className="flex flex-row justify-between w-full h-fit">
-          {/* Filters */}
+      <div className="flex flex-col w-[1240px] mx-auto h-full text-richBlack px-8 pt-12">
+        <div className="flex justify-between w-full">
           <Filters
             sizes={sizes}
             colors={colors}
@@ -124,12 +143,10 @@ const ShopPage = () => {
               })}
             </div>
 
-            {/* Pagination */}
             <Pagination />
           </div>
         </div>
 
-        {/* Footer */}
         <Footer hasMiniHighlights={true} hasBorder={false} />
       </div>
     </div>

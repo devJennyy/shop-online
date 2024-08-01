@@ -3,10 +3,10 @@ import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColo
 /** @type {import('tailwindcss').Config} */
 export const darkMode = ["class"];
 export const content = [
-  './pages/**/*.{ts,tsx}',
-  './components/**/*.{ts,tsx}',
-  './app/**/*.{ts,tsx}',
-  './src/**/*.{ts,tsx}',
+  "./pages/**/*.{ts,tsx}",
+  "./components/**/*.{ts,tsx}",
+  "./app/**/*.{ts,tsx}",
+  "./src/**/*.{ts,tsx}",
 ];
 export const prefix = "";
 export const theme = {
@@ -19,19 +19,33 @@ export const theme = {
   },
   extend: {
     colors: {
-      'richBlack': '#030812',
-      'offWhite': '#F5F5F5',
-      'paleBlue': '#EDF0F7',
+      richBlack: "#030812",
+      offWhite: "#F5F5F5",
+      paleBlue: "#EDF0F7",
       gray: {
-        'paleGray': '#EDEDED',
-        'lightGray': '#E1E3E5',
-        'coolGray': '#9A9CAA',
-        'darkGray': '#666666',
-        'slateGray': '#8B96A5',
+        paleGray: "#EDEDED",
+        lightGray: "#E1E3E5",
+        coolGray: "#9A9CAA",
+        darkGray: "#666666",
+        slateGray: "#8B96A5",
       },
       saveditems: {
-        'red': '#DC2626',
-        'gray': '#999999',
+        red: "#DC2626",
+        gray: "#999999",
+      },
+      itemColor: {
+        black: "#000000",
+        lightBeige: "#EBE6DB",
+        skyBlue: "#B1C5D4",
+        rose: "#C6AEC7",
+        earthBrown: "#836953",
+        brightBlue: "#6CB9FF",
+        pink: "#FFD1DC",
+        mintGreen: "#C1E1C1",
+        blush: "#C6AEC7",
+        navyBlue: "#063E66",
+        gold: "#FFD700",
+        coral: "#FF6C6C",
       },
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
@@ -90,7 +104,8 @@ export const theme = {
     animation: {
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
-      scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      scroll:
+        "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
     },
     boxShadow: {
       input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
@@ -104,7 +119,7 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
