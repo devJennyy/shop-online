@@ -3,15 +3,20 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Link } from "react-router-dom";
 
 const FlashDeals = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000})] );
-  const [emblaTopBanner] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000})] );
-  const [emblaBottomBanner] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000})] );
-
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3500 }),
+  ]);
+  const [emblaTopBanner] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4000 }),
+  ]);
+  const [emblaBottomBanner] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4500 }),
+  ]);
 
   return (
     <div className="flex flex-row justify-center items-center mt-16 gap-2 h-80">
       <div className="flex flex-col max-w-[390px] gap-2 h-full">
-        {/* Top Banner */}
+        {/* Top */}
         <Link
           to={"/shop-page"}
           className="embla mx-auto w-full h-1/2 bg-[#E3E3E3] rounded-md"
@@ -20,13 +25,13 @@ const FlashDeals = () => {
           <div className="embla__container h-full">
             <div className="embla__slide flex justify-center items-center">
               <img
-                src="/images/banner/macbook-banner.png"
+                src="/images/banner/headphone-banner.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
             <div className="embla__slide flex justify-center items-center">
               <img
-                src="/images/banner/headphone-banner.png"
+                src="/images/banner/macbook-banner.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
@@ -38,6 +43,7 @@ const FlashDeals = () => {
             </div>
           </div>
         </Link>
+        {/* Bottom */}
         <Link
           to={"/shop-page"}
           className="embla mx-auto w-full h-1/2 bg-[#E3E3E3] rounded-md"
@@ -56,11 +62,17 @@ const FlashDeals = () => {
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
+            <div className="embla__slide flex justify-center items-center">
+              <img
+                src="/images/banner/furniture-banner.png"
+                className="object-cover w-full h-full rounded-md"
+              />
+            </div>
           </div>
         </Link>
       </div>
 
-      {/* Shop Page */}
+      {/* Main */}
       <Link
         to={"/shop-page"}
         className="embla mx-auto max-w-full h-full rounded-md"
@@ -75,13 +87,13 @@ const FlashDeals = () => {
           </div>
           <div className="embla__slide flex justify-center items-center">
             <img
-              src="/images/banner/banner.png"
+              src="/images/banner/banner-two.png"
               className="object-cover w-full h-full rounded-md"
             />
           </div>
           <div className="embla__slide flex justify-center items-center">
             <img
-              src="/images/banner/banner.png"
+              src="/images/banner/banner-three.png"
               className="object-cover w-full h-full rounded-md"
             />
           </div>
