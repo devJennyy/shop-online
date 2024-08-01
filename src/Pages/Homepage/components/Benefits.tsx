@@ -10,7 +10,7 @@ const Benefits = ({ title, description, icon }: Props) => {
       {icon}
       <div className="flex flex-col justify-center items-start gap-[1px]">
         <p className="text-[16px] font-medium">{title}</p>
-        <p className="text-[12px] font-normal text-[#9A9CAA]">{description}</p>
+        <p className="text-[12px] font-normal text-gray-coolGray">{description}</p>
       </div>
     </div>
   );

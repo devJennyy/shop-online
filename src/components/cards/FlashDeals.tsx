@@ -19,7 +19,7 @@ const FlashDeals = () => {
         {/* Top */}
         <Link
           to={"/shop-page"}
-          className="embla mx-auto w-full h-1/2 bg-[#E3E3E3] rounded-md"
+          className="embla mx-auto w-full h-1/2 bg-gray-lightGray rounded-md"
           ref={emblaTopBanner}
         >
           <div className="embla__container h-full">
@@ -46,7 +46,7 @@ const FlashDeals = () => {
         {/* Bottom */}
         <Link
           to={"/shop-page"}
-          className="embla mx-auto w-full h-1/2 bg-[#E3E3E3] rounded-md"
+          className="embla mx-auto w-full h-1/2 bg-gray-lightGray rounded-md"
           ref={emblaBottomBanner}
         >
           <div className="embla__container h-full">

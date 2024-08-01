@@ -19,7 +19,17 @@ export const theme = {
   },
   extend: {
     colors: {
-      savedItems: {
+      'richBlack': '#030812',
+      'offWhite': '#F5F5F5',
+      'paleBlue': '#EDF0F7',
+      gray: {
+        'paleGray': '#EDEDED',
+        'lightGray': '#E1E3E5',
+        'coolGray': '#9A9CAA',
+        'darkGray': '#666666',
+        'slateGray': '#8B96A5',
+      },
+      saveditems: {
         'red': '#DC2626',
         'gray': '#999999',
       },

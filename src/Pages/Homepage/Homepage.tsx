@@ -180,7 +180,7 @@ const Homepage = () => {
         <FlashDeals />
 
         {/* Benefits */}
-        <div className="w-full h-32 border border-[#E1E3E5] rounded-md mt-16 px-7">
+        <div className="w-full h-32 border border-gray-lightGray rounded-md mt-16 px-7">
           <div className="grid grid-cols-4 justify-between items-center w-full h-full">
             {benefitsData?.map((benefitData) => {
               return (
@@ -215,19 +215,19 @@ const Homepage = () => {
           <CategoryHeader subHeader={"Flash Deals"} Header={"Flash Deals"} />
 
           <div className="grid grid-cols-3 justify-between items-center w-full h-56 gap-4">
-            <div className="w-full h-full bg-[#EDEDED] rounded-md">
+            <div className="w-full h-full rounded-md">
               <img
                 src="/images/flashdeals/flashdeals.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
-            <div className="w-full h-full bg-[#EDEDED] rounded-md">
+            <div className="w-full h-full rounded-md">
               <img
                 src="/images/flashdeals/flashdeals-two.png"
                 className="object-cover w-full h-full rounded-md"
               />
             </div>
-            <div className="w-full h-full bg-[#EDEDED] rounded-md">
+            <div className="w-full h-full rounded-md">
               <img
                 src="/images/flashdeals/flashdeals-three.png"
                 className="object-cover w-full h-full rounded-md"

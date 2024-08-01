@@ -32,8 +32,8 @@ import { Button } from "../ui/button";
 const Header = ({ hasNavbar }: Props) => {
   return (
     <div className="w-full">
-      <div className="w-full text-white bg-[#030812]">
-        <div className="flex flex-row justify-start items-center h-12 w-[1240px] mx-auto bg-[#030812] px-8">
+      <div className="w-full text-white bg-richBlack">
+        <div className="flex flex-row justify-start items-center h-12 w-[1240px] mx-auto bg-richBlack px-8">
           {hasNavbar ? (
             <div className="flex flex-row items-center gap-2 w-full">
               <BsBagCheckFill size={16} />
@@ -95,9 +95,9 @@ const Header = ({ hasNavbar }: Props) => {
 
       {/* Navbar */}
       {hasNavbar && (
-        <div className="w-[1240px] mx-auto h-fit text-[#0B0D21]">
+        <div className="w-[1240px] mx-auto">
           <div className="w-full h-full px-8">
-            <div className="flex flex-row justify-between items-center h-24 border-b border-[#E3E3E3]">
+            <div className="flex flex-row justify-between items-center h-24 border-b border-gray-lightGray">
               <a href="/homepage" className="flex w-60 h-full">
                 <img src="/icons/logo.svg" className="w-full" />
               </a>
@@ -106,11 +106,11 @@ const Header = ({ hasNavbar }: Props) => {
               <div className="flex flex-row justify-end items-center w-[400px] h-11 relative">
                 <input
                   placeholder="Sign up and get 100% off your first order"
-                  className="w-full h-full text-[14px] font-normal border border-[#E1E3E5] rounded-md pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100"
+                  className="w-full h-full text-[14px] font-normal border border-gray-lightGray rounded-md pl-4 pr-12 outline-none focus:shadow-sm focus-visible:ring-1 ring-stone-100"
                 />
                 <LuSearch
                   size={20}
-                  className="absolute mr-4 text-[#9A9CAA] cursor-pointer"
+                  className="absolute mr-4 text-gray-slateGray cursor-pointer"
                 />
               </div>
 
@@ -120,7 +120,7 @@ const Header = ({ hasNavbar }: Props) => {
                   <HoverCardTrigger asChild>
                     <Button
                       variant="link"
-                      className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
+                      className="flex flex-row justify-center items-center w-11 h-11 border border-gray-lightGray rounded-md"
                     >
                       <img src="/icons/cart.svg" />
                     </Button>
@@ -136,7 +136,7 @@ const Header = ({ hasNavbar }: Props) => {
                       </div>
                       <div className="flex flex-col justify-center items-center mt-3">
                         <p className="font-bold">No Orders</p>
-                        <p className="text-[13px] text-[#757575]">
+                        <p className="text-[13px] text-gray-darkGray/90">
                           You haven't made any orders yet.
                         </p>
                       </div>
@@ -149,7 +149,7 @@ const Header = ({ hasNavbar }: Props) => {
                   <HoverCardTrigger asChild>
                     <Button
                       variant="link"
-                      className="flex flex-row justify-center items-center w-11 h-11 border border-[#E1E3E5] rounded-md"
+                      className="flex flex-row justify-center items-center w-11 h-11 border border-gray-lightGray rounded-md"
                     >
                       <img src="/icons/heart.svg" />
                     </Button>
@@ -165,7 +165,7 @@ const Header = ({ hasNavbar }: Props) => {
                       </div>
                       <div className="flex flex-col justify-center items-center">
                         <p className="font-bold">No Favorites</p>
-                        <p className="text-[13px] text-[#757575]">
+                        <p className="text-[13px] text-gray-darkGray/90">
                           You haven't liked any items yet.
                         </p>
                       </div>
@@ -176,7 +176,7 @@ const Header = ({ hasNavbar }: Props) => {
                 {/* User Icon */}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex flex-row justify-center items-center w-11 h-11 bg-[#030812] rounded-md">
+                    <button className="flex flex-row justify-center items-center w-11 h-11 bg-richBlack rounded-md">
                       <img src="/icons/user.svg" />
                     </button>
                   </DropdownMenuTrigger>
