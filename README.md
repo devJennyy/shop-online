@@ -5,7 +5,11 @@ A responsive e-commerce website for online shopping https://shop-online-devjenny
 
 ## Tech Used
 - React
+- Typescript
 - TailwindCSS
+- Shadcn
+- EmblaCarousel
+- AceternityUI
 
 <br>
 
