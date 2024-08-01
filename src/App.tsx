@@ -15,23 +15,16 @@ import ShopPage from "./Pages/Items/ShopPage/ShopPage";
 function App() {
   return (
     <Router>
-      {/* Main Container */}
-      <div className="w-full h-fit text-[#0B0D21]">
-        <div>
-
-          {/* Routes */}
-          <Routes>
-            <Route path="/" element={<Navigate to="/homepage" replace />} />
-            <Route path="/homepage" element={<Homepage />} />
-            <Route path="/faqs" element={<Faqs />} />
-            <Route path="/help-center" element={<HelpCenter />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/shop-page" element={<ShopPage />} />
-            <Route path="/product-page" element={<ProductPage />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/homepage" replace />} />
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/help-center" element={<HelpCenter />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/shop-page" element={<ShopPage />} />
+        <Route path="/product-page" element={<ProductPage />} />
+      </Routes>
     </Router>
   );
 }

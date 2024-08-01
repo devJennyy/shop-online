@@ -19,6 +19,10 @@ export const theme = {
   },
   extend: {
     colors: {
+      savedItems: {
+        'red': '#DC2626',
+        'gray': '#999999',
+      },
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
       ring: "hsl(var(--ring))",
