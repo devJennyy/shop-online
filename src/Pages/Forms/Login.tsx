@@ -12,7 +12,7 @@ const Login = () => {
     <div className="w-full">
       <Header hasNavbar={false} />
 
-      {/* FAQs */}
+      {/* Login */}
       <div className="flex flex-col justify-center items-center w-[1240px] mx-auto h-full px-8 text-[#0B0D21] pt-28 gap-10">
         <div className="flex flex-row justify-between w-full gap-5">
           <div className="flex flex-row w-1/2 h-full">

@@ -135,8 +135,8 @@ const Footer = ({ hasBorder, hasMiniHighlights }: Props) => {
       <button className="flex flex-col justify-center items-center gap-2 text-[#666666] text-[12px] hover:underline">
         <div className="w-full border-b border-[#EDEDED]"></div>
         <div className="flex flex-col gap-2 mt-10 mb-20">
-          <p>Designed & Built by Jenny Pieloor</p>
-          <p>2024</p>
+          <p>Designed & Developed by</p>
+          <p>Jenny Pieloor</p>
         </div>
       </button>
       </div>

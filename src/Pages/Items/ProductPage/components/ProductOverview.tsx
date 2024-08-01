@@ -226,7 +226,10 @@ const ProductOverview = ({
                       </Button>
                     </HoverCardTrigger>
 
-                    <HoverCardContent className="flex flex-row justify-center items-center gap-2 w-48 h-14">
+                    <HoverCardContent
+                      side="top"
+                      className="flex flex-row justify-center items-center gap-2 w-48 h-14"
+                    >
                       <IoMdHeart className="text-red-600" />
                       <p className="text-[14px]">Favorite</p>
                       <p className="text-[14px] text-[#757575]">(8.2k)</p>
@@ -273,22 +276,22 @@ const ProductOverview = ({
       {/* Related Products */}
       <div className="flex flex-col">
         <p className="text-[30px] font-semibold">Related Products</p>
-        
+
         <div className="grid grid-cols-4 mt-10 gap-4">
-              {shopItem?.map((item) => {
-                return (
-                  <Link to={"/product-page"}>
-                    <ShopCard
-                      image={item.image}
-                      itemName={item.itemName}
-                      itemPrice={item.price}
-                      colors={item.colors}
-                      sold={item.sold}
-                    />
-                  </Link>
-                );
-              })}
-            </div>
+          {shopItem?.map((item) => {
+            return (
+              <Link to={"/product-page"}>
+                <ShopCard
+                  image={item.image}
+                  itemName={item.itemName}
+                  itemPrice={item.price}
+                  colors={item.colors}
+                  sold={item.sold}
+                />
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
