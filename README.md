@@ -18,4 +18,4 @@ A responsive e-commerce website for online shopping https://shop-online-devjenny
 ***
 
 <br>
-<p align="center">☕ Design and Built by <a href="https://linktree-jenny.vercel.app/">Jenny Pieloor</a></p>
+<p align="center">☕ Designed and Developed by <a href="https://">Jenny Pieloor</a></p>
