@@ -44,7 +44,7 @@ const ShopPage = () => {
   ];
   const shopItem: IShopItems[] = [
     {
-      image: "/images/shop-item/hats/hat-khaki.png",
+      image: "/images/product-item/hats/hat-khaki.png",
       itemName: "Summer Hat",
       price: 25.0,
       colors: [
@@ -55,7 +55,7 @@ const ShopPage = () => {
       sold: false
     },
     {
-      image: "/images/shop-item/sunglasses/sunglass-cover.png",
+      image: "/images/product-item/sunglasses/sunglass-cover.png",
       itemName: "Vintage Sunglasses",
       price: 10.15,
       colors: [
@@ -67,7 +67,7 @@ const ShopPage = () => {
       sold: true
     },
     {
-      image: "/images/shop-item/blazer/blazer-cover.jpg",
+      image: "/images/product-item/blazer/blazer-cover.jpg",
       itemName: "Fashion Blazer & Pants",
       price: 10.15,
       colors: [
@@ -77,7 +77,7 @@ const ShopPage = () => {
       sold: false
     },
     {
-      image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
+      image: "/images/product-item/sweatshirt/sweatshirt-cover.jpg",
       itemName: "Topstitched Sweatshirt",
       price: 25.0,
       colors: [
@@ -86,7 +86,7 @@ const ShopPage = () => {
       sold: true
     },
     {
-      image: "/images/shop-item/sandals/sandal-cover.jpg",
+      image: "/images/product-item/sandals/sandal-cover.jpg",
       itemName: "Sandals with Heels",
       price: 25.0,
       colors: [
@@ -97,7 +97,7 @@ const ShopPage = () => {
       sold: true
     },
     {
-      image: "/images/shop-item/men-suit/suit-cover.jpg",
+      image: "/images/product-item/men-suit/suit-cover.jpg",
       itemName: "Men's Suit",
       price: 25.0,
       colors: [

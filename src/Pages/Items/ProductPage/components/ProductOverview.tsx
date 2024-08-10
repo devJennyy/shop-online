@@ -70,7 +70,7 @@ const ProductOverview = ({
       {/* Product Preview */}
       <div className="flex flex-row justify-between">
         {/* Media */}
-        <div className="flex flex-row w-fit h-[600px] gap-5">
+        <div className="flex h-[600px] gap-5">
           <div className="flex flex-col justify-between w-20 h-full gap-4">
             {selectionMedia?.map((selection, index) => {
               return (
@@ -86,7 +86,7 @@ const ProductOverview = ({
             })}
           </div>
 
-          <div className="w-[500px] h-full">
+          <div className="w-[500px] h-full border-red-700">
             <img src={selectedMedia} className="w-full h-full object-cover" />
           </div>
         </div>
@@ -105,7 +105,7 @@ const ProductOverview = ({
             <FaStar />
             <FaRegStar />
 
-            <div className="flex flex-row gap-2 text-[14px] text-[#A4A1AA] font-normal mt-[4px]">
+            <div className="flex flex-row gap-2 text-[14px] text-[#A4A1AA] font-normal mt-[10px]">
               <p>4.0</p>
               <p>(121 Reviews)</p>
             </div>

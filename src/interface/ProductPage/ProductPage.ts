@@ -1,4 +1,4 @@
-export interface IProductPage {
+export interface IProduct {
     selectedMedia: string;
     selectionMedia: string[];
     shopName: string;
@@ -7,6 +7,12 @@ export interface IProductPage {
     itemPreviousPrice: number;
     discountPercentage: number;
     itemLeft: number;
-    size: string[];
+    size?: string[];
     colors: string[];
-}
+  }
+  
+  export interface IProductPage {
+    hat: IProduct;
+    headphone: IProduct;
+  }
+  

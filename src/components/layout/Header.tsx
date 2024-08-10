@@ -67,7 +67,7 @@ const Header = ({ hasNavbar }: Props) => {
                 <SelectGroup>
                   <SelectItem value="english">English</SelectItem>
                   <SelectItem value="filipino">Filipino</SelectItem>
-                  <SelectItem value="chinese">Chinese</SelectItem>
+                  <SelectItem value="japanese">Japanese</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
