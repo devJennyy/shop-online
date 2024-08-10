@@ -3,7 +3,11 @@ import { FaRegStar, FaStar } from "react-icons/fa6";
 import { LuMinus, LuPlus } from "react-icons/lu";
 import Countdown from "react-countdown";
 import { Link } from "react-router-dom";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
 import { IoMdHeart } from "react-icons/io";
 import ShopCard from "../../ShopPage/components/ShopCard";
@@ -37,37 +41,42 @@ const ProductOverview = ({
   const [count, setCount] = useState(1);
   const shopItem: IShopItems[] = [
     {
-      image: "/images/shop-item/sunglasses/sunglass-cover.png",
+      image: "/images/product-item/sunglasses/sunglass-cover.png",
       itemName: "Vintage Sunglasses",
       price: 10.15,
-      colors: ["bg-[#000000]", "bg-[#836953]", "bg-[#FFD1DC]", "bg-[#C6AEC7]"],
+      colors: [
+        "bg-black",
+        "bg-itemColor-earthBrown",
+        "bg-itemColor-pink",
+        "bg-itemColor-rose",
+      ],
       sold: true,
     },
     {
-      image: "/images/shop-item/blazer/blazer-cover.jpg",
+      image: "/images/product-item/blazer/blazer-cover.jpg",
       itemName: "Fashion Blazer & Pants",
       price: 10.15,
-      colors: ["bg-red-600", "bg-[#000000]"],
+      colors: ["bg-red-600", "bg-black"],
       sold: false,
     },
     {
-      image: "/images/shop-item/sweatshirt/sweatshirt-cover.jpg",
+      image: "/images/product-item/sweatshirt/sweatshirt-cover.jpg",
       itemName: "Topstitched Sweatshirt",
       price: 25.0,
-      colors: ["bg-[#EBE6DB]"],
+      colors: ["bg-itemColor-lightBeige"],
       sold: true,
     },
     {
-      image: "/images/shop-item/sandals/sandal-cover.jpg",
+      image: "/images/product-item/sandals/sandal-cover.jpg",
       itemName: "Sandals with Heels",
       price: 25.0,
-      colors: ["bg-[#8DB4D2]", "bg-[#000000]", "bg-[#EBE6DB]"],
+      colors: ["bg-itemColor-steelBlue", "bg-black", "bg-itemColor-lightBeige"],
       sold: true,
     },
   ];
+  const stars = Array(3).fill(null);
   return (
-    <div className="flex flex-col w-full h-fit gap-20">
-      {/* Product Preview */}
+    <div className="flex flex-col w-full gap-20">
       <div className="flex flex-row justify-between">
         {/* Media */}
         <div className="flex h-[600px] gap-5">
@@ -93,19 +102,18 @@ const ProductOverview = ({
 
         {/* Product Details */}
         <div className=" flex flex-col w-1/2 h-full ml-14">
-          <p className="uppercase text-[14px] text-[#666666] font-medium">
-            {shopName}
-          </p>
+          <p className="uppercase text-[14px] text- font-medium">{shopName}</p>
           <p className="text-[30px] font-semibold">{productName}</p>
 
           <div className="flex flex-row items-center gap-2">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
+            {stars?.map(() => {
+              return (
+                <FaStar />
+              )
+            })} 
             <FaRegStar />
 
-            <div className="flex flex-row gap-2 text-[14px] text-[#A4A1AA] font-normal mt-[10px]">
+            <div className="flex flex-row gap-2 text-[14px] text-gray-coolGray font-normal mt-[10px]">
               <p>4.0</p>
               <p>(121 Reviews)</p>
             </div>
@@ -115,10 +123,10 @@ const ProductOverview = ({
             <p className="text-[24px] font-bold">
               ${itemCurrentPrice.toFixed(2)}
             </p>
-            <p className="text-[#A4A1AA] line-through">
+            <p className="text-gray-coolGray line-through">
               ${itemPreviousPrice.toFixed(2)}
             </p>
-            <div className="flex justify-center items-center w-16 h-5 bg-[#DA3F3F] rounded-full">
+            <div className="flex justify-center items-center w-16 h-5 bg-red-600 rounded-full">
               <p className="uppercase text-[10px] text-white">
                 Save {discountPercentage}%
               </p>
@@ -126,7 +134,7 @@ const ProductOverview = ({
           </div>
 
           {/* Countdown */}
-          <div className="flex justify-between items-center bg-[#FDEFEE] w-full h-10 outline outline-1 outline-[#F8CCCC] rounded-sm text-[#FF706B] text-[14px] font-medium px-4">
+          <div className="flex justify-between items-center bg-countdownColor-softRose w-full h-10 outline outline-1 outline-countdownColor-lightCoral rounded-sm text-countdownColor-salmonPink text-[14px] font-medium px-4">
             <p>Hurry up! Sale ends in:</p>
             <Countdown
               className="tracking-[7px] font-bold"
@@ -136,12 +144,12 @@ const ProductOverview = ({
 
           {/* Item Stock */}
           <div className="flex flex-col justify-start items-start mt-8 gap-2">
-            <p className="text-[12px] text-[#666666] font-normal">
+            <p className="text-[12px] text-gray-darkGray font-normal">
               Only <span className="font-bold">{itemLeft}</span> item(s) left in
               stock!
             </p>
-            <div className="w-full h-1 bg-[#DEDEDE] rounded-full">
-              <div className="w-10 h-1 bg-[#EF2D2D] rounded-full"></div>
+            <div className="w-full h-1 bg-gray-lightGray rounded-full">
+              <div className="w-10 h-1 bg-crimsonRed rounded-full"></div>
             </div>
           </div>
 
@@ -155,8 +163,8 @@ const ProductOverview = ({
                     <button
                       className={`${sizes} ${
                         index == 0
-                          ? `w-11 h-11 bg-[#030812] text-white`
-                          : `w-11 h-11 border hover:bg-[#030812] hover:text-white transition-all`
+                          ? `w-11 h-11 bg-richBlack text-white`
+                          : `w-11 h-11 border hover:bg-richBlack hover:text-white transition-all`
                       } flex justify-center items-center rounded-md`}
                     >
                       {sizes}
@@ -176,7 +184,7 @@ const ProductOverview = ({
                       className={`${color} ${
                         index == 0
                           ? `w-4 h-4 outline outline-black outline-1 outline-offset-2 mr-[2px]`
-                          : `w-5 h-5 outline outline-1 outline-[#E6E6E6]`
+                          : `w-5 h-5 outline outline-1 outline-gray-lightGray`
                       } rounded-full cursor-pointer`}
                     ></div>
                   );
@@ -220,7 +228,7 @@ const ProductOverview = ({
                     <HoverCardTrigger asChild>
                       <Button
                         variant="link"
-                        className="flex flex-row justify-center items-center min-w-11 h-11 border border-[#E1E3E5] rounded-md"
+                        className="flex flex-row justify-center items-center min-w-11 h-11 border border-gray-lightGray rounded-md"
                       >
                         <img src="/icons/heart.svg" />
                       </Button>
@@ -232,7 +240,7 @@ const ProductOverview = ({
                     >
                       <IoMdHeart className="text-red-600" />
                       <p className="text-[14px]">Favorite</p>
-                      <p className="text-[14px] text-[#757575]">(8.2k)</p>
+                      <p className="text-[14px] text-gray-darkGray">(8.2k)</p>
                     </HoverCardContent>
                   </HoverCard>
                 </Link>
@@ -250,8 +258,8 @@ const ProductOverview = ({
           <button className="active:font-bold">Reviews</button>
         </div>
 
-        <div className="w-full h-[2px] bg-[#DEDEDE] rounded-full mt-2">
-          <div className="w-24 h-[2px] bg-[#030812] rounded-full"></div>
+        <div className="w-full h-[2px] bg-gray-paleGray rounded-full mt-2">
+          <div className="w-24 h-[2px] bg-richBlack rounded-full"></div>
         </div>
 
         <div className="flex flex-col gap-7 text-justify text-[14px] mt-7">

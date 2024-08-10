@@ -54,7 +54,7 @@ const ProductPage = () => {
       <Header hasNavbar={true} />
 
       <div className="flex flex-col w-[1240px] mx-auto text-richBlack px-8 pt-12">
-        {/* Render hat products */}
+        {/* Hat products */}
         {hatProducts.map((product, index) => (
           <ProductOverview
             key={`hat-${index}`}
@@ -71,7 +71,7 @@ const ProductPage = () => {
           />
         ))}
 
-        {/* Render headphone product if available */}
+        {/* Headphone product */}
         {headphone && (
           <ProductOverview
             key="headphone"

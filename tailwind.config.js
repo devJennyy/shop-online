@@ -22,12 +22,18 @@ export const theme = {
       richBlack: "#030812",
       offWhite: "#F5F5F5",
       paleBlue: "#EDF0F7",
+      crimsonRed: "#EF2D2D",
       gray: {
         paleGray: "#EDEDED",
         lightGray: "#E1E3E5",
         coolGray: "#9A9CAA",
         darkGray: "#666666",
         slateGray: "#8B96A5",
+      },
+      countdownColor: {
+        softRose: "#FDEFEE",
+        lightCoral: "#F8CCCC",
+        salmonPink: "#FF706B",
       },
       saveditems: {
         red: "#DC2626",
@@ -44,6 +50,7 @@ export const theme = {
         mintGreen: "#C1E1C1",
         blush: "#C6AEC7",
         navyBlue: "#063E66",
+        steelBlue: "#8DB4D2",
         gold: "#FFD700",
         coral: "#FF6C6C",
       },
