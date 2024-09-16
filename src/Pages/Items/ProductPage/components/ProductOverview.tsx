@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { IoMdHeart } from "react-icons/io";
 import ShopCard from "../../ShopPage/components/ShopCard";
 import { IShopItems } from "@/interface/ShopPage/ShopItems";
+import { JSX } from "react/jsx-runtime";
 
 interface Props {
   selectedMedia: string;
@@ -74,7 +75,18 @@ const ProductOverview = ({
       sold: true,
     },
   ];
-  const stars = Array(3).fill(null);
+  const stars: JSX.Element[] = [];
+  const rating = 4;
+  const getStarRating = () => {
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rating) {
+        stars.push(<FaStar />);
+      } else {
+        stars.push(<FaRegStar />);
+      }
+    }
+    return stars;
+  };
   return (
     <div className="flex flex-col w-full gap-20">
       <div className="flex flex-row justify-between">
@@ -106,13 +118,7 @@ const ProductOverview = ({
           <p className="text-[30px] font-semibold">{productName}</p>
 
           <div className="flex flex-row items-center gap-2">
-            {stars?.map(() => {
-              return (
-                <FaStar />
-              )
-            })} 
-            <FaRegStar />
-
+            {getStarRating()}
             <div className="flex flex-row gap-2 text-[14px] text-gray-coolGray font-normal mt-[10px]">
               <p>4.0</p>
               <p>(121 Reviews)</p>
