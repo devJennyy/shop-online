@@ -5,13 +5,13 @@ import {
   BrowserRouter as Router,
   Navigate,
 } from "react-router-dom";
-import Faqs from "./Pages/Faqs/Faqs";
-import Login from "./Pages/Forms/Login";
-import Signup from "./Pages/Forms/Signup";
-import HelpCenter from "./Pages/HelpCenter/HelpCenter";
-import Homepage from "./Pages/Homepage/Homepage";
-import ProductPage from "./Pages/Items/ProductPage/ProductPage";
-import ShopPage from "./Pages/Items/ShopPage/ShopPage";
+import Faqs from "./Pages/Faqs";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+import HelpCenter from "./Pages/HelpCenter";
+import Homepage from "./Pages/Homepage";
+import ProductPage from "./Pages/ProductPage";
+import ShopPage from "./Pages/ShopPage";
 function App() {
   return (
     <Router>

@@ -1,13 +1,13 @@
 import { CiDiscount1, CiDeliveryTruck } from "react-icons/ci";
 import { GoHeartFill, GoShieldCheck } from "react-icons/go";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import Discovery from "../../components/cards/Discovery";
+import Discovery from "../components/cards/Discovery";
 import FlashDeals from "@/components/cards/FlashDeals";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Benefits from "./components/Benefits";
-import Categories from "./components/Categories";
-import CategoryHeader from "./components/CategoryHeader";
+import Benefits from "../components/Homepage/Benefits";
+import Categories from "../components/Homepage/Categories";
+import CategoryHeader from "../components/Homepage/CategoryHeader";
 
 const Homepage = () => {
   const benefitsData = [

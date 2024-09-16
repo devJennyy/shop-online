@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
 import { IoMdHeart } from "react-icons/io";
-import ShopCard from "../../ShopPage/components/ShopCard";
+import ShopCard from "../ShopPage/ShopCard";
 import { IShopItems } from "@/interface/ShopPage/ShopItems";
 import { JSX } from "react/jsx-runtime";
 

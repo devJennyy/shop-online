@@ -1,10 +1,10 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import ShopCard from "./components/ShopCard";
 import { Link } from "react-router-dom";
-import Filters from "./components/Filters";
 import { IShopItems } from "@/interface/ShopPage/ShopItems";
-import Pagination from "./components/Pagination";
+import Filters from "@/components/ShopPage/Filters";
+import ShopCard from "@/components/ShopPage/ShopCard";
+import { Pagination } from "@/components/ui/pagination";
 
 const ShopPage = () => {
   const sizes = ["S", "M", "L", "XL"];

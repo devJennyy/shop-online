@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import ProductOverview from "./components/ProductOverview";
+import ProductOverview from "@/components/ProductPage/ProductOverview";
 import { IProductPage } from "@/interface/ProductPage/ProductPage";
 import { useLocation } from 'react-router-dom';
 
