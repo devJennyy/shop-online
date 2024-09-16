@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
-const FaqsCard = ({ numberCount, titleHeader, details }: Props) => {
+const AccordionCard = ({ numberCount, titleHeader, details }: Props) => {
   return (
     <Accordion
       type="single"
@@ -63,4 +63,4 @@ const FaqsCard = ({ numberCount, titleHeader, details }: Props) => {
   );
 };
 
-export default FaqsCard;
+export default AccordionCard;

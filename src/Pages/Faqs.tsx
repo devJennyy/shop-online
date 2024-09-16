@@ -1,4 +1,4 @@
-import FaqsCard from "@/components/cards/FaqsCard";
+import AccordionCard from "@/components/cards/AccordionCard";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 
@@ -15,34 +15,34 @@ const Faqs = () => {
           </p>
         </div>
 
-        <div className="flex justify-between w-full gap-5">
-          <div className="w-1/2">
-            <FaqsCard
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+          <div>
+            <AccordionCard
               numberCount={1}
               titleHeader="Lorem ipsum dolor sit amet consectetur."
-              details="Lorem ipsum dolor sit amet consectetur. In augue ipsum tellusultrices. 
-            Ac pharetra ultrices consectetur consequat tellus massa. Necaliquam cras sagittis 
-            duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. 
-            Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper 
-            in facilisis consequat aliquam. Id placerat dui habitasse quisque nisl tincidunt 
-            facilisi mi id. Dictum elit velit."
+              details="Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultricies. 
+        Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis 
+        duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. 
+        Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper 
+        in facilisis consequat aliquam. Id placerat dui habitasse quisque nisl tincidunt 
+        facilisi mi id. Dictum elit velit."
             />
           </div>
 
-          <div className="w-1/2">
-            <FaqsCard
+          <div>
+            <AccordionCard
               numberCount={4}
               titleHeader="Lorem ipsum dolor sit amet consectetur."
-              details="Lorem ipsum dolor sit amet consectetur. In augue ipsum tellusultrices. 
-            Ac pharetra ultrices consectetur consequat tellus massa. Necaliquam cras sagittis 
-            duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. 
-            Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper 
-            in facilisis consequat aliquam. Id placerat dui habitasse quisque nisl tincidunt 
-            facilisi mi id. Dictum elit velit."
+              details="Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultricies. 
+        Ac pharetra ultrices consectetur consequat tellus massa. Nec aliquam cras sagittis 
+        duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. 
+        Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper 
+        in facilisis consequat aliquam. Id placerat dui habitasse quisque nisl tincidunt 
+        facilisi mi id. Dictum elit velit."
             />
           </div>
         </div>
-        
+
         <div className="w-full">
           <Footer hasMiniHighlights={false} hasBorder={true} />
         </div>

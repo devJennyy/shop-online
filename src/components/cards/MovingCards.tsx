@@ -2,7 +2,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 const MovingCards = () => {
   return (
-    <button className="h-fit w-[1170px] rounded-md flex flex-col antialiased bg-white items-start justify-start text-left relative overflow-hidden mt-10 text-black">
+    <button className="h-fit w-[1170px] rounded-md flex flex-col antialiased bg-white items-start justify-start text-left relative overflow-hidden text-black">
       <InfiniteMovingCards
         items={testimonials}
         direction="left"
