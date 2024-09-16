@@ -13,90 +13,66 @@ const Hero = () => {
     Autoplay({ delay: 4500 }),
   ]);
 
+  const banners = [
+    "/images/banner/headphone-banner.png",
+    "/images/banner/macbook-banner.png",
+    "/images/banner/xbox-banner.png",
+  ];
+
+  const bottomBanners = [
+    "/images/banner/sofa-banner.png",
+    "/images/banner/chair-banner.png",
+    "/images/banner/furniture-banner.png",
+  ];
+
+  const renderSlides = (images: string[]) =>
+    images.map((src, index) => (
+      <div key={index} className="embla__slide flex justify-center items-center">
+        <img
+          src={src}
+          alt={`Banner ${index}`}
+          className="object-cover w-full h-full rounded-md"
+        />
+      </div>
+    ));
+
   return (
     <div className="flex flex-row justify-center items-center mt-16 gap-2 h-80">
       <div className="flex flex-col max-w-[390px] gap-2 h-full">
-        {/* Top */}
+        {/* Top Banner */}
         <Link
-          to={"/shop-page"}
+          to="/shop-page"
           className="embla mx-auto w-full h-1/2 bg-gray-lightGray rounded-md"
           ref={emblaTopBanner}
         >
           <div className="embla__container h-full">
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/headphone-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/macbook-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/xbox-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
+            {renderSlides(banners)}
           </div>
         </Link>
-        {/* Bottom */}
+        {/* Bottom Banner */}
         <Link
-          to={"/shop-page"}
+          to="/shop-page"
           className="embla mx-auto w-full h-1/2 bg-gray-lightGray rounded-md"
           ref={emblaBottomBanner}
         >
           <div className="embla__container h-full">
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/sofa-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/chair-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="embla__slide flex justify-center items-center">
-              <img
-                src="/images/banner/furniture-banner.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
+            {renderSlides(bottomBanners)}
           </div>
         </Link>
       </div>
 
-      {/* Main */}
+      {/* Main Banner */}
       <Link
-        to={"/shop-page"}
+        to="/shop-page"
         className="embla mx-auto max-w-full h-full rounded-md"
         ref={emblaRef}
       >
         <div className="embla__container h-full">
-          <div className="embla__slide flex justify-center items-center">
-            <img
-              src="/images/banner/banner.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
-          <div className="embla__slide flex justify-center items-center">
-            <img
-              src="/images/banner/banner-two.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
-          <div className="embla__slide flex justify-center items-center">
-            <img
-              src="/images/banner/banner-three.png"
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
+          {renderSlides([
+            "/images/banner/banner.png",
+            "/images/banner/banner-two.png",
+            "/images/banner/banner-three.png",
+          ])}
         </div>
       </Link>
     </div>
