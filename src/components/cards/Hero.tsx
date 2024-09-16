@@ -2,7 +2,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { Link } from "react-router-dom";
 
-const FlashDeals = () => {
+const Hero = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 3500 }),
   ]);
@@ -103,4 +103,4 @@ const FlashDeals = () => {
   );
 };
 
-export default FlashDeals;
+export default Hero;

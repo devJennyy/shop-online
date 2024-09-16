@@ -1,16 +1,16 @@
 import { CiDiscount1, CiDeliveryTruck } from "react-icons/ci";
 import { GoHeartFill, GoShieldCheck } from "react-icons/go";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import Discovery from "../components/cards/Discovery";
-import FlashDeals from "@/components/cards/FlashDeals";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Benefits from "../components/Homepage/Benefits";
-import Categories from "../components/Homepage/Categories";
-import CategoryHeader from "../components/Homepage/CategoryHeader";
+import LimitedEdition from "@/components/Homepage/FlashDeals";
+import Hero from "@/components/cards/Hero";
+import ItemOverview from "../components/cards/ItemOverview";
+import FeaturedHighlights from "../components/Homepage/FeaturedHighlights";
+import CategorySection from "../components/Homepage/CategorySection";
 
 const Homepage = () => {
-  const benefitsData = [
+  const featuredData = [
     {
       title: "Discount",
       description: "Enjoy vouchers everyday",
@@ -32,7 +32,7 @@ const Homepage = () => {
       icon: <GoShieldCheck size={45} />,
     },
   ];
-  const categoriesData = [
+  const categoryData = [
     {
       categoryImage: "/images/categories/womens-apparel.png",
       categoryName: "Women's Apparels",
@@ -90,7 +90,13 @@ const Homepage = () => {
       categoryName: "Mobiles Accessories",
     },
   ];
-  const discoveryData = [
+  const flashDealsData = [
+    { imageSrc: "/images/flashdeals/flashdeals.png" },
+    { imageSrc: "/images/flashdeals/flashdeals-two.png" },
+    { imageSrc: "/images/flashdeals/flashdeals-three.png" },
+  ];
+  
+  const itemOverviewData = [
     {
       itemImage: "/images/discovery/fujifilm.png",
       currentPrice: 159.6,
@@ -177,86 +183,11 @@ const Homepage = () => {
       <Header hasNavbar={true} />
 
       <div className="w-[1240px] mx-auto h-full px-8">
-        <FlashDeals />
-
-        {/* Benefits */}
-        <div className="w-full h-32 border border-gray-lightGray rounded-md mt-16 px-7">
-          <div className="grid grid-cols-4 justify-between items-center w-full h-full">
-            {benefitsData?.map((benefitData) => {
-              return (
-                <Benefits
-                  title={benefitData.title}
-                  description={benefitData.description}
-                  icon={benefitData.icon}
-                />
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Categories */}
-        <div className="flex flex-col mt-20 gap-14">
-          <CategoryHeader subHeader={"Shop From"} Header={"Top Categories"} />
-
-          <div className="grid grid-cols-7 gap-16">
-            {categoriesData?.map((categoryData) => {
-              return (
-                <Categories
-                  categoryImage={categoryData.categoryImage}
-                  categoryName={categoryData.categoryName}
-                />
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Limited Flash Deals */}
-        <div className="flex flex-col mt-28 gap-14">
-          <CategoryHeader subHeader={"Flash Deals"} Header={"Flash Deals"} />
-
-          <div className="grid grid-cols-3 justify-between items-center w-full h-56 gap-4">
-            <div className="w-full h-full rounded-md">
-              <img
-                src="/images/flashdeals/flashdeals.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="w-full h-full rounded-md">
-              <img
-                src="/images/flashdeals/flashdeals-two.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-            <div className="w-full h-full rounded-md">
-              <img
-                src="/images/flashdeals/flashdeals-three.png"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Daily Discovery */}
-        <div className="flex flex-col mt-28 gap-14">
-          <CategoryHeader subHeader={"Daily"} Header={"Discovery"} />
-
-          <div className="grid grid-cols-5 gap-4">
-            {discoveryData?.map((discoveries) => {
-              return (
-                <Discovery
-                  currentPrice={discoveries.currentPrice}
-                  previousPrice={discoveries.previousPrice}
-                  itemName={discoveries.itemName}
-                  totalSold={discoveries.totalSold}
-                  savedStatus={discoveries.savedStatus}
-                  itemImage={discoveries.itemImage}
-                />
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Footer */}
+        <Hero />
+        <FeaturedHighlights featuredData={featuredData} />
+        <CategorySection categoryData={categoryData} />
+        <LimitedEdition flashDealsData={flashDealsData} />
+        <ItemOverview itemOverviewData={itemOverviewData} />
         <Footer hasMiniHighlights={true} hasBorder={false} />
       </div>
     </div>
